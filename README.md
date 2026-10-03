@@ -87,6 +87,4 @@ only a pipeline check; it cannot reproduce the paper's reported statistics.
 The source code is available under the MIT License (see `LICENSE`). GitHub's
 "Cite this repository" function reads `CITATION.cff`, which identifies Yu Wang
 as the sole software citation author. The repository is
-https://github.com/bestwangyu/pddr-dols. No release DOI or article DOI is set
-yet. Create a versioned GitHub release for Zenodo archiving; do not treat a
-DOI as already assigned. No `rg` executable is required by the scripts.
+https://github.com/bestwangyu/pddr-dols. DOI: 10.5281/zenodo.23118332
