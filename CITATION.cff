@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+title: "PDDR-DOLS: Reproducible code for cost-aware heterogeneous ensemble pruning"
+authors:
+  - family-names: Wang
+    given-names: Yu
+license: MIT
+repository-code: https://github.com/bestwangyu/pddr-dols
