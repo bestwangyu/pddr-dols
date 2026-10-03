@@ -1,0 +1,22 @@
+PEP/MDEP cross-dataset statistics
+
+Inference unit: dataset mean over outer folds and optimization seeds
+Independent units: n=14 datasets
+Tests: Friedman omnibus across dataset means; paired two-sided Wilcoxon candidate versus NSGA-II; Holm correction across three candidate comparisons within each metric
+W/T/L definition: candidate algorithm relative to NSGA-II.
+Positive improvement means the candidate is better.
+
+test_error: Friedman={'n_instances': 14, 'n_algorithms': 4, 'statistic': 1.5441176470588236, 'pvalue': 0.6721260629969468}; means={'pep_paper': 0.07901538783683161, 'mdep_paper': 0.0797175924793789, 'nsga2': 0.0789073359411229, 'pddr_local_search_delete_only': 0.07867396478734687}; ranks={'pep_paper': 2.1785714285714284, 'mdep_paper': 2.75, 'nsga2': 2.607142857142857, 'pddr_local_search_delete_only': 2.4642857142857144}
+  pep_paper vs nsga2: W/T/L=10/0/4, p=0.0579834, Holm=0.17395, reject=False, improvement=-0.000108052, CI95=[-0.0023564648784510597, 0.0013073261420539042], r_rb=+0.5810
+  mdep_paper vs nsga2: W/T/L=5/0/9, p=0.903198, Holm=1, reject=False, improvement=-0.000810257, CI95=[-0.005452413791086078, 0.002589594170236405], r_rb=-0.0476
+  pddr_local_search_delete_only vs nsga2: W/T/L=6/3/5, p=0.929153, Holm=1, reject=False, improvement=+0.000233371, CI95=[-0.00040687227197611813, 0.0011239770112842305], r_rb=-0.0303
+
+selected_count: Friedman={'n_instances': 14, 'n_algorithms': 4, 'statistic': 23.27343750000001, 'pvalue': 3.541534933106125e-05}; means={'pep_paper': 2.8999999999999995, 'mdep_paper': 2.1714285714285713, 'nsga2': 3.2342857142857144, 'pddr_local_search_delete_only': 2.825714285714286}; ranks={'pep_paper': 3.0, 'mdep_paper': 1.3928571428571428, 'nsga2': 3.4642857142857144, 'pddr_local_search_delete_only': 2.142857142857143}
+  pep_paper vs nsga2: W/T/L=10/0/4, p=0.0479348, Holm=0.0479348, reject=True, improvement=+0.334286, CI95=[0.07714285714285715, 0.5885714285714286], r_rb=+0.6000
+  mdep_paper vs nsga2: W/T/L=11/2/1, p=0.00287341, Holm=0.00862024, reject=True, improvement=+1.06286, CI95=[0.6171428571428573, 1.5228571428571431], r_rb=+0.9744
+  pddr_local_search_delete_only vs nsga2: W/T/L=11/3/0, p=0.00329894, Holm=0.00862024, reject=True, improvement=+0.408571, CI95=[0.20571428571428568, 0.642857142857143], r_rb=+1.0000
+
+algorithm_runtime_seconds: Friedman={'n_instances': 14, 'n_algorithms': 4, 'statistic': 38.571428571428584, 'pvalue': 2.1391670731499875e-08}; means={'pep_paper': 0.04490745589702524, 'mdep_paper': 1.6542076998509996, 'nsga2': 0.28657294506074066, 'pddr_local_search_delete_only': 1.473126243995835}; ranks={'pep_paper': 1.0, 'mdep_paper': 3.2857142857142856, 'nsga2': 2.0, 'pddr_local_search_delete_only': 3.7142857142857144}
+  pep_paper vs nsga2: W/T/L=14/0/0, p=0.00012207, Holm=0.000366211, reject=True, improvement=+0.241665, CI95=[0.2080079201351701, 0.2835325004237737], r_rb=+1.0000
+  mdep_paper vs nsga2: W/T/L=0/0/14, p=0.00012207, Holm=0.000366211, reject=True, improvement=-1.36763, CI95=[-2.1969940808402026, -0.756245345797872], r_rb=-1.0000
+  pddr_local_search_delete_only vs nsga2: W/T/L=0/0/14, p=0.00012207, Holm=0.000366211, reject=True, improvement=-1.18655, CI95=[-1.385083103792842, -1.0379413443332723], r_rb=-1.0000

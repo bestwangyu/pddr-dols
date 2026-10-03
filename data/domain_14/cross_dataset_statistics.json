@@ -1,0 +1,547 @@
+{
+  "protocol": {
+    "primary_inference_unit": "dataset mean over outer folds and optimization seeds",
+    "n_primary_units": 14,
+    "repeated_run_unit": "dataset x outer-fold x optimization-seed",
+    "algorithms": [
+      "pep_paper",
+      "mdep_paper",
+      "nsga2",
+      "pddr_local_search_delete_only"
+    ],
+    "reference": "nsga2",
+    "primary_metric": "test_error",
+    "secondary_metrics": [
+      "selected_count",
+      "algorithm_runtime_seconds"
+    ],
+    "primary_tests": "Friedman omnibus across dataset means; paired two-sided Wilcoxon candidate versus NSGA-II; Holm correction across three candidate comparisons within each metric",
+    "within_dataset_view": "secondary repeated-run diagnostic; optimizer seeds are nested within outer folds",
+    "pooled_view": "descriptive support only; no pooled inferential p-values",
+    "comparison_direction": "W/T/L and positive improvement are always candidate relative to NSGA-II"
+  },
+  "cross_dataset": {
+    "test_error": {
+      "n_datasets": 14,
+      "dataset_order": [
+        "banknote",
+        "breast_cancer",
+        "dry_bean",
+        "iris",
+        "letter",
+        "magic",
+        "optdigits",
+        "page_blocks",
+        "segment",
+        "semeion",
+        "spambase",
+        "vehicle",
+        "wine",
+        "yeast"
+      ],
+      "means": {
+        "pep_paper": 0.07901538783683161,
+        "mdep_paper": 0.0797175924793789,
+        "nsga2": 0.0789073359411229,
+        "pddr_local_search_delete_only": 0.07867396478734687
+      },
+      "dataset_means": {
+        "pep_paper": [
+          0.004079097544790976,
+          0.026014594007141748,
+          0.06975203743763835,
+          0.04666666666666667,
+          0.031529999999999996,
+          0.12245005257623554,
+          0.014661921708185054,
+          0.02824725985658594,
+          0.02761904761904762,
+          0.06365489639399854,
+          0.04998748996837086,
+          0.2021301775147929,
+          0.024571428571428567,
+          0.3948507598507598
+        ],
+        "mdep_paper": [
+          0.004368944923689449,
+          0.020723490141282407,
+          0.07072189094288374,
+          0.06000000000000001,
+          0.03085,
+          0.12212407991587801,
+          0.014982206405693952,
+          0.02850300101007571,
+          0.02761904761904762,
+          0.06503381242483389,
+          0.04959675211254307,
+          0.20568047337278106,
+          0.016825396825396823,
+          0.399017199017199
+        ],
+        "nsga2": [
+          0.0040780358327803575,
+          0.02814780313615898,
+          0.07051608430969969,
+          0.03333333333333333,
+          0.03221,
+          0.12321766561514196,
+          0.014590747330960854,
+          0.02832051956291269,
+          0.027012987012987013,
+          0.0645350052246604,
+          0.05055247132134258,
+          0.20355029585798814,
+          0.02682539682539682,
+          0.3978123578123578
+        ],
+        "pddr_local_search_delete_only": [
+          0.003641672196416722,
+          0.02814780313615898,
+          0.07020755784601362,
+          0.03333333333333333,
+          0.03138,
+          0.12211356466876971,
+          0.014590747330960854,
+          0.028174233886788046,
+          0.027792207792207795,
+          0.0657889237199582,
+          0.05072595949582213,
+          0.1985798816568047,
+          0.027936507936507936,
+          0.399023114023114
+        ]
+      },
+      "friedman": {
+        "n_instances": 14,
+        "n_algorithms": 4,
+        "statistic": 1.5441176470588236,
+        "pvalue": 0.6721260629969468
+      },
+      "mean_ranks": {
+        "pep_paper": 2.1785714285714284,
+        "mdep_paper": 2.75,
+        "nsga2": 2.607142857142857,
+        "pddr_local_search_delete_only": 2.4642857142857144
+      },
+      "comparisons_to_nsga2": [
+        {
+          "algorithm": "pep_paper",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 22.0,
+          "pvalue": 0.0579833984375,
+          "median_delta": -0.0007220234360306756,
+          "win": 10,
+          "tie": 0,
+          "loss": 4,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": 0.00010805189570870922,
+          "mean_delta_reference_minus_candidate": -0.00010805189570870922,
+          "mean_improvement": -0.00010805189570870922,
+          "mean_improvement_ci95": [
+            -0.0023564648784510597,
+            0.0013073261420539042
+          ],
+          "rank_biserial": 0.580952380952381,
+          "holm_pvalue": 0.1739501953125,
+          "reject_holm": false
+        },
+        {
+          "algorithm": "mdep_paper",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 50.0,
+          "pvalue": 0.9031982421875,
+          "median_delta": 0.0002483578620465707,
+          "win": 5,
+          "tie": 0,
+          "loss": 9,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": 0.0008102565382560097,
+          "mean_delta_reference_minus_candidate": -0.0008102565382560097,
+          "mean_improvement": -0.0008102565382560097,
+          "mean_improvement_ci95": [
+            -0.005452413791086078,
+            0.002589594170236405
+          ],
+          "rank_biserial": -0.047619047619047616,
+          "holm_pvalue": 1.0,
+          "reject_holm": false
+        },
+        {
+          "algorithm": "pddr_local_search_delete_only",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 32.0,
+          "pvalue": 0.9291527647091152,
+          "median_delta": 0.0,
+          "win": 6,
+          "tie": 3,
+          "loss": 5,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": -0.00023337115377603922,
+          "mean_delta_reference_minus_candidate": 0.00023337115377603922,
+          "mean_improvement": 0.00023337115377603922,
+          "mean_improvement_ci95": [
+            -0.00040687227197611813,
+            0.0011239770112842305
+          ],
+          "rank_biserial": -0.030303030303030304,
+          "holm_pvalue": 1.0,
+          "reject_holm": false
+        }
+      ]
+    },
+    "selected_count": {
+      "n_datasets": 14,
+      "dataset_order": [
+        "banknote",
+        "breast_cancer",
+        "dry_bean",
+        "iris",
+        "letter",
+        "magic",
+        "optdigits",
+        "page_blocks",
+        "segment",
+        "semeion",
+        "spambase",
+        "vehicle",
+        "wine",
+        "yeast"
+      ],
+      "means": {
+        "pep_paper": 2.8999999999999995,
+        "mdep_paper": 2.1714285714285713,
+        "nsga2": 3.2342857142857144,
+        "pddr_local_search_delete_only": 2.825714285714286
+      },
+      "dataset_means": {
+        "pep_paper": [
+          1.44,
+          2.08,
+          5.36,
+          1.32,
+          3.0,
+          2.2,
+          4.84,
+          3.48,
+          2.0,
+          3.84,
+          2.6,
+          2.44,
+          1.4,
+          4.6
+        ],
+        "mdep_paper": [
+          1.0,
+          1.88,
+          4.52,
+          1.0,
+          1.48,
+          2.04,
+          3.32,
+          2.8,
+          1.52,
+          2.36,
+          2.52,
+          2.32,
+          1.0,
+          2.64
+        ],
+        "nsga2": [
+          1.08,
+          1.8,
+          6.2,
+          1.0,
+          3.76,
+          2.84,
+          5.12,
+          3.56,
+          2.56,
+          4.08,
+          3.52,
+          3.24,
+          1.0,
+          5.52
+        ],
+        "pddr_local_search_delete_only": [
+          1.0,
+          1.8,
+          5.88,
+          1.0,
+          2.44,
+          2.12,
+          4.8,
+          3.48,
+          2.0,
+          3.64,
+          3.08,
+          2.0,
+          1.0,
+          5.32
+        ]
+      },
+      "friedman": {
+        "n_instances": 14,
+        "n_algorithms": 4,
+        "statistic": 23.27343750000001,
+        "pvalue": 3.541534933106125e-05
+      },
+      "mean_ranks": {
+        "pep_paper": 3.0,
+        "mdep_paper": 1.3928571428571428,
+        "nsga2": 3.4642857142857144,
+        "pddr_local_search_delete_only": 2.142857142857143
+      },
+      "comparisons_to_nsga2": [
+        {
+          "algorithm": "pep_paper",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 21.0,
+          "pvalue": 0.047934751018931465,
+          "median_delta": -0.42000000000000015,
+          "win": 10,
+          "tie": 0,
+          "loss": 4,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": -0.33428571428571424,
+          "mean_delta_reference_minus_candidate": 0.33428571428571424,
+          "mean_improvement": 0.33428571428571424,
+          "mean_improvement_ci95": [
+            0.07714285714285715,
+            0.5885714285714286
+          ],
+          "rank_biserial": 0.6,
+          "holm_pvalue": 0.047934751018931465,
+          "reject_holm": true
+        },
+        {
+          "algorithm": "mdep_paper",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 1.0,
+          "pvalue": 0.0028734139278525227,
+          "median_delta": -0.9600000000000002,
+          "win": 11,
+          "tie": 2,
+          "loss": 1,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": -1.062857142857143,
+          "mean_delta_reference_minus_candidate": 1.062857142857143,
+          "mean_improvement": 1.062857142857143,
+          "mean_improvement_ci95": [
+            0.6171428571428573,
+            1.5228571428571431
+          ],
+          "rank_biserial": 0.9743589743589743,
+          "holm_pvalue": 0.008620241783557568,
+          "reject_holm": true
+        },
+        {
+          "algorithm": "pddr_local_search_delete_only",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 0.0,
+          "pvalue": 0.0032989353588360605,
+          "median_delta": -0.3200000000000003,
+          "win": 11,
+          "tie": 3,
+          "loss": 0,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": -0.40857142857142853,
+          "mean_delta_reference_minus_candidate": 0.40857142857142853,
+          "mean_improvement": 0.40857142857142853,
+          "mean_improvement_ci95": [
+            0.20571428571428568,
+            0.642857142857143
+          ],
+          "rank_biserial": 1.0,
+          "holm_pvalue": 0.008620241783557568,
+          "reject_holm": true
+        }
+      ]
+    },
+    "algorithm_runtime_seconds": {
+      "n_datasets": 14,
+      "dataset_order": [
+        "banknote",
+        "breast_cancer",
+        "dry_bean",
+        "iris",
+        "letter",
+        "magic",
+        "optdigits",
+        "page_blocks",
+        "segment",
+        "semeion",
+        "spambase",
+        "vehicle",
+        "wine",
+        "yeast"
+      ],
+      "means": {
+        "pep_paper": 0.04490745589702524,
+        "mdep_paper": 1.6542076998509996,
+        "nsga2": 0.28657294506074066,
+        "pddr_local_search_delete_only": 1.473126243995835
+      },
+      "dataset_means": {
+        "pep_paper": [
+          0.04074435180518776,
+          0.03830679260659963,
+          0.04132331584580243,
+          0.04141731571871787,
+          0.051008385196328165,
+          0.03555499426554889,
+          0.038000372578389945,
+          0.06248693191446364,
+          0.032463412606157364,
+          0.08815761954989285,
+          0.03578292356804013,
+          0.038567197914235296,
+          0.03859233487397432,
+          0.04629843411501497
+        ],
+        "mdep_paper": [
+          0.7881000715168193,
+          0.7841962902061641,
+          2.8538589806854726,
+          0.740223365528509,
+          6.184022314557805,
+          2.496107706427574,
+          1.9577323406748475,
+          1.2172244931571186,
+          1.1448930464824663,
+          0.9799054592614993,
+          1.2046688105119392,
+          0.7554952025599778,
+          1.1001312675094232,
+          0.952348448834382
+        ],
+        "nsga2": [
+          0.2629350756853819,
+          0.2856273882696405,
+          0.22678287104703487,
+          0.29542428540531546,
+          0.2905506511637941,
+          0.233137312293984,
+          0.2352027550386265,
+          0.44573233536444606,
+          0.2173172555072233,
+          0.5286272683460266,
+          0.23457851668354124,
+          0.2464041722845286,
+          0.27776972830295565,
+          0.23193161545787006
+        ],
+        "pddr_local_search_delete_only": [
+          1.3433792223688215,
+          1.494347758591175,
+          1.1228463529609143,
+          1.7346052091568709,
+          1.647426187484525,
+          1.1809327386505901,
+          1.178184494804591,
+          1.7898588074324653,
+          1.158227543993853,
+          2.738595635481179,
+          1.2095855026785285,
+          1.325541381686926,
+          1.5095938028115778,
+          1.1906427778396755
+        ]
+      },
+      "friedman": {
+        "n_instances": 14,
+        "n_algorithms": 4,
+        "statistic": 38.571428571428584,
+        "pvalue": 2.1391670731499875e-08
+      },
+      "mean_ranks": {
+        "pep_paper": 1.0,
+        "mdep_paper": 3.2857142857142856,
+        "nsga2": 2.0,
+        "pddr_local_search_delete_only": 3.7142857142857144
+      },
+      "comparisons_to_nsga2": [
+        {
+          "algorithm": "pep_paper",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 0.0,
+          "pvalue": 0.0001220703125,
+          "median_delta": -0.2150138491252437,
+          "win": 14,
+          "tie": 0,
+          "loss": 0,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": -0.24166548916371536,
+          "mean_delta_reference_minus_candidate": 0.24166548916371536,
+          "mean_improvement": 0.24166548916371536,
+          "mean_improvement_ci95": [
+            0.2080079201351701,
+            0.2835325004237737
+          ],
+          "rank_biserial": 1.0,
+          "holm_pvalue": 0.0003662109375,
+          "reject_holm": true
+        },
+        {
+          "algorithm": "mdep_paper",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 0.0,
+          "pvalue": 0.0001220703125,
+          "median_delta": 0.7969268484995701,
+          "win": 0,
+          "tie": 0,
+          "loss": 14,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": 1.3676347547902594,
+          "mean_delta_reference_minus_candidate": -1.3676347547902594,
+          "mean_improvement": -1.3676347547902594,
+          "mean_improvement_ci95": [
+            -2.1969940808402026,
+            -0.756245345797872
+          ],
+          "rank_biserial": -1.0,
+          "holm_pvalue": 0.0003662109375,
+          "reject_holm": true
+        },
+        {
+          "algorithm": "pddr_local_search_delete_only",
+          "reference": "nsga2",
+          "n": 14,
+          "statistic": 0.0,
+          "pvalue": 0.0001220703125,
+          "median_delta": 1.0797906780429185,
+          "win": 0,
+          "tie": 0,
+          "loss": 14,
+          "comparison_direction": "candidate_vs_reference",
+          "win_definition": "candidate_better_than_reference",
+          "mean_delta_candidate_minus_reference": 1.1865532989350946,
+          "mean_delta_reference_minus_candidate": -1.1865532989350946,
+          "mean_improvement": -1.1865532989350946,
+          "mean_improvement_ci95": [
+            -1.385083103792842,
+            -1.0379413443332723
+          ],
+          "rank_biserial": -1.0,
+          "holm_pvalue": 0.0003662109375,
+          "reject_holm": true
+        }
+      ]
+    }
+  }
+}

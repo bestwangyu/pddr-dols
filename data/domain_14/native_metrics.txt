@@ -1,0 +1,32 @@
+PEP/MDEP native objective-space analysis
+
+records: 700
+
+banknote | mdep_paper | n=25 | HV=1.331000 | IGD+=0.000000 | coverage=1.0000 | front=1.00/1.00 | test_error=0.004369 | selected=1.000
+banknote | pep_paper | n=25 | HV=0.906286 | IGD+=0.290372 | coverage=0.6400 | front=1.20/1.00 | test_error=0.004079 | selected=1.440
+breast_cancer | mdep_paper | n=25 | HV=0.570375 | IGD+=0.035339 | coverage=0.8613 | front=2.36/3.00 | test_error=0.020723 | selected=1.880
+breast_cancer | pep_paper | n=25 | HV=0.664167 | IGD+=0.217370 | coverage=0.6000 | front=1.68/1.80 | test_error=0.026015 | selected=2.080
+dry_bean | mdep_paper | n=25 | HV=0.725070 | IGD+=0.053431 | coverage=0.5396 | front=6.92/13.60 | test_error=0.070722 | selected=4.520
+dry_bean | pep_paper | n=25 | HV=0.778783 | IGD+=0.102561 | coverage=0.4547 | front=3.44/4.00 | test_error=0.069752 | selected=5.360
+iris | mdep_paper | n=25 | HV=1.331000 | IGD+=0.000000 | coverage=1.0000 | front=1.00/1.00 | test_error=0.060000 | selected=1.000
+iris | pep_paper | n=25 | HV=0.990000 | IGD+=0.213137 | coverage=0.7600 | front=1.12/1.00 | test_error=0.046667 | selected=1.320
+letter | mdep_paper | n=25 | HV=0.310398 | IGD+=0.274979 | coverage=0.4893 | front=2.32/5.20 | test_error=0.030850 | selected=1.480
+letter | pep_paper | n=25 | HV=0.772369 | IGD+=0.246604 | coverage=0.6400 | front=2.00/1.60 | test_error=0.031530 | selected=3.000
+magic | mdep_paper | n=25 | HV=0.567731 | IGD+=0.057153 | coverage=0.6608 | front=4.88/7.80 | test_error=0.122124 | selected=2.040
+magic | pep_paper | n=25 | HV=0.826000 | IGD+=0.046103 | coverage=0.9400 | front=1.60/1.60 | test_error=0.122450 | selected=2.200
+optdigits | mdep_paper | n=25 | HV=0.526678 | IGD+=0.147136 | coverage=0.5830 | front=4.56/7.60 | test_error=0.014982 | selected=3.320
+optdigits | pep_paper | n=25 | HV=0.685018 | IGD+=0.141181 | coverage=0.5667 | front=3.04/3.40 | test_error=0.014662 | selected=4.840
+page_blocks | mdep_paper | n=25 | HV=0.654079 | IGD+=0.056329 | coverage=0.7289 | front=5.60/7.80 | test_error=0.028503 | selected=2.800
+page_blocks | pep_paper | n=25 | HV=0.456286 | IGD+=0.125878 | coverage=0.7467 | front=2.16/2.20 | test_error=0.028247 | selected=3.480
+segment | mdep_paper | n=25 | HV=0.934693 | IGD+=0.086284 | coverage=0.8900 | front=1.76/2.20 | test_error=0.027619 | selected=1.520
+segment | pep_paper | n=25 | HV=0.980490 | IGD+=0.093503 | coverage=0.8467 | front=1.52/1.60 | test_error=0.027619 | selected=2.000
+semeion | mdep_paper | n=25 | HV=0.545830 | IGD+=0.189156 | coverage=0.4438 | front=2.56/6.60 | test_error=0.065034 | selected=2.360
+semeion | pep_paper | n=25 | HV=0.648111 | IGD+=0.141560 | coverage=0.6067 | front=2.52/2.60 | test_error=0.063655 | selected=3.840
+spambase | mdep_paper | n=25 | HV=0.606654 | IGD+=0.132610 | coverage=0.4904 | front=4.64/9.20 | test_error=0.049597 | selected=2.520
+spambase | pep_paper | n=25 | HV=0.636632 | IGD+=0.142504 | coverage=0.7800 | front=1.96/2.00 | test_error=0.049987 | selected=2.600
+vehicle | mdep_paper | n=25 | HV=0.645885 | IGD+=0.032104 | coverage=0.7727 | front=4.36/6.00 | test_error=0.205680 | selected=2.320
+vehicle | pep_paper | n=25 | HV=0.750246 | IGD+=0.073907 | coverage=0.8067 | front=2.08/2.00 | test_error=0.202130 | selected=2.440
+wine | mdep_paper | n=25 | HV=1.331000 | IGD+=0.000000 | coverage=1.0000 | front=1.00/1.00 | test_error=0.016825 | selected=1.000
+wine | pep_paper | n=25 | HV=0.940000 | IGD+=0.260000 | coverage=0.6800 | front=1.12/1.00 | test_error=0.024571 | selected=1.400
+yeast | mdep_paper | n=25 | HV=0.544197 | IGD+=0.071801 | coverage=0.3756 | front=4.04/11.40 | test_error=0.399017 | selected=2.640
+yeast | pep_paper | n=25 | HV=0.724157 | IGD+=0.113219 | coverage=0.5967 | front=3.44/3.20 | test_error=0.394851 | selected=4.600

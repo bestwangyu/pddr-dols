@@ -1,0 +1,241 @@
+Formal PEP/MDEP joint statistics
+
+[Primary cross-dataset inference: dataset means are paired units]
+  test_error (n=14 datasets): Friedman p=0.672126; means={'pep_paper': 0.07901538783683161, 'mdep_paper': 0.0797175924793789, 'nsga2': 0.0789073359411229, 'pddr_local_search_delete_only': 0.07867396478734687}; ranks={'pep_paper': 2.1785714285714284, 'mdep_paper': 2.75, 'nsga2': 2.607142857142857, 'pddr_local_search_delete_only': 2.4642857142857144}
+    pep_paper vs nsga2 W/T/L=10/0/4 p=0.0579834 Holm=0.17395 reject=False improvement=-0.000108052 CI95=[-0.00235646, +0.00130733] r_rb=+0.5810
+    mdep_paper vs nsga2 W/T/L=5/0/9 p=0.903198 Holm=1 reject=False improvement=-0.000810257 CI95=[-0.00545241, +0.00258959] r_rb=-0.0476
+    pddr_local_search_delete_only vs nsga2 W/T/L=6/3/5 p=0.929153 Holm=1 reject=False improvement=+0.000233371 CI95=[-0.000406872, +0.00112398] r_rb=-0.0303
+  selected_count (n=14 datasets): Friedman p=3.54153e-05; means={'pep_paper': 2.8999999999999995, 'mdep_paper': 2.1714285714285713, 'nsga2': 3.2342857142857144, 'pddr_local_search_delete_only': 2.825714285714286}; ranks={'pep_paper': 3.0, 'mdep_paper': 1.3928571428571428, 'nsga2': 3.4642857142857144, 'pddr_local_search_delete_only': 2.142857142857143}
+    pep_paper vs nsga2 W/T/L=10/0/4 p=0.0479348 Holm=0.0479348 reject=True improvement=+0.334286 CI95=[+0.0771429, +0.588571] r_rb=+0.6000
+    mdep_paper vs nsga2 W/T/L=11/2/1 p=0.00287341 Holm=0.00862024 reject=True improvement=+1.06286 CI95=[+0.617143, +1.52286] r_rb=+0.9744
+    pddr_local_search_delete_only vs nsga2 W/T/L=11/3/0 p=0.00329894 Holm=0.00862024 reject=True improvement=+0.408571 CI95=[+0.205714, +0.642857] r_rb=+1.0000
+  algorithm_runtime_seconds (n=14 datasets): Friedman p=2.13917e-08; means={'pep_paper': 0.04490745589702524, 'mdep_paper': 1.6542076998509996, 'nsga2': 0.28657294506074066, 'pddr_local_search_delete_only': 1.473126243995835}; ranks={'pep_paper': 1.0, 'mdep_paper': 3.2857142857142856, 'nsga2': 2.0, 'pddr_local_search_delete_only': 3.7142857142857144}
+    pep_paper vs nsga2 W/T/L=14/0/0 p=0.00012207 Holm=0.000366211 reject=True improvement=+0.241665 CI95=[+0.208008, +0.283533] r_rb=+1.0000
+    mdep_paper vs nsga2 W/T/L=0/0/14 p=0.00012207 Holm=0.000366211 reject=True improvement=-1.36763 CI95=[-2.19699, -0.756245] r_rb=-1.0000
+    pddr_local_search_delete_only vs nsga2 W/T/L=0/0/14 p=0.00012207 Holm=0.000366211 reject=True improvement=-1.18655 CI95=[-1.38508, -1.03794] r_rb=-1.0000
+
+W/T/L definition: candidate algorithm relative to NSGA-II.
+Positive improvement means the candidate is better.
+
+[Within-dataset repeated-run diagnostics: secondary]
+banknote (n=25):
+  test_error: Friedman p=0.91286; means={'pep_paper': 0.004079097544790976, 'mdep_paper': 0.004368944923689449, 'nsga2': 0.0040780358327803575, 'pddr_local_search_delete_only': 0.003641672196416722}
+    pep_paper W/T/L=8/6/11 p=0.775845 Holm=1 improvement=-1.06171e-06 r_rb=+0.0737
+    mdep_paper W/T/L=10/5/10 p=0.924348 Holm=1 improvement=-0.000290909 r_rb=-0.0238
+    pddr_local_search_delete_only W/T/L=1/24/0 p=0.317311 Holm=0.951932 improvement=+0.000436364 r_rb=+1.0000
+  selected_count: Friedman p=4.44507e-05; means={'pep_paper': 1.44, 'mdep_paper': 1.0, 'nsga2': 1.08, 'pddr_local_search_delete_only': 1.0}
+    pep_paper W/T/L=1/15/9 p=0.0495584 Holm=0.148675 improvement=-0.36 r_rb=-0.6727
+    mdep_paper W/T/L=1/24/0 p=0.317311 Holm=0.634621 improvement=+0.08 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=1/24/0 p=0.317311 Holm=0.634621 improvement=+0.08 r_rb=+1.0000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.04074435180518776, 'mdep_paper': 0.7881000715168193, 'nsga2': 0.2629350756853819, 'pddr_local_search_delete_only': 1.3433792223688215}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.222191 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.525165 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.08044 r_rb=-1.0000
+breast_cancer (n=25):
+  test_error: Friedman p=0.0186443; means={'pep_paper': 0.026014594007141748, 'mdep_paper': 0.020723490141282407, 'nsga2': 0.02814780313615898, 'pddr_local_search_delete_only': 0.02814780313615898}
+    pep_paper W/T/L=8/12/5 p=0.302178 Holm=0.604356 improvement=+0.00213321 r_rb=+0.3187
+    mdep_paper W/T/L=8/17/0 p=0.0108103 Holm=0.0324309 improvement=+0.00742431 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+  selected_count: Friedman p=0.00271701; means={'pep_paper': 2.08, 'mdep_paper': 1.88, 'nsga2': 1.8, 'pddr_local_search_delete_only': 1.8}
+    pep_paper W/T/L=0/19/6 p=0.0196307 Holm=0.058892 improvement=-0.28 r_rb=-1.0000
+    mdep_paper W/T/L=0/24/1 p=0.317311 Holm=0.634621 improvement=-0.08 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.03830679260659963, 'mdep_paper': 0.7841962902061641, 'nsga2': 0.2856273882696405, 'pddr_local_search_delete_only': 1.494347758591175}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.247321 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.498569 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.20872 r_rb=-1.0000
+dry_bean (n=25):
+  test_error: Friedman p=0.373491; means={'pep_paper': 0.06975203743763835, 'mdep_paper': 0.07072189094288374, 'nsga2': 0.07051608430969969, 'pddr_local_search_delete_only': 0.07020755784601362}
+    pep_paper W/T/L=11/8/6 p=0.06449 Holm=0.19347 improvement=+0.000764047 r_rb=+0.5098
+    mdep_paper W/T/L=10/4/11 p=0.601618 Holm=0.950492 improvement=-0.000205807 r_rb=-0.1299
+    pddr_local_search_delete_only W/T/L=5/15/5 p=0.475246 Holm=0.950492 improvement=+0.000308526 r_rb=+0.2545
+  selected_count: Friedman p=4.06694e-06; means={'pep_paper': 5.36, 'mdep_paper': 4.52, 'nsga2': 6.2, 'pddr_local_search_delete_only': 5.88}
+    pep_paper W/T/L=10/14/1 p=0.0105587 Holm=0.0211174 improvement=+0.84 r_rb=+0.8182
+    mdep_paper W/T/L=16/8/1 p=0.000301764 Holm=0.000905293 improvement=+1.68 r_rb=+0.9739
+    pddr_local_search_delete_only W/T/L=5/18/2 p=0.228231 Holm=0.228231 improvement=+0.32 r_rb=+0.5000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.04132331584580243, 'mdep_paper': 2.8538589806854726, 'nsga2': 0.22678287104703487, 'pddr_local_search_delete_only': 1.1228463529609143}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.18546 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-2.62708 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.896063 r_rb=-1.0000
+iris (n=25):
+  test_error: Friedman p=0.00241399; means={'pep_paper': 0.04666666666666667, 'mdep_paper': 0.06000000000000001, 'nsga2': 0.03333333333333333, 'pddr_local_search_delete_only': 0.03333333333333333}
+    pep_paper W/T/L=5/10/10 p=0.43458 Holm=0.86916 improvement=-0.0133333 r_rb=-0.2250
+    mdep_paper W/T/L=0/15/10 p=0.00399151 Holm=0.0119745 improvement=-0.0266667 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+  selected_count: Friedman p=0.00043985; means={'pep_paper': 1.32, 'mdep_paper': 1.0, 'nsga2': 1.0, 'pddr_local_search_delete_only': 1.0}
+    pep_paper W/T/L=0/19/6 p=0.0231409 Holm=0.0694228 improvement=-0.32 r_rb=-1.0000
+    mdep_paper W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+    pddr_local_search_delete_only W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.04141731571871787, 'mdep_paper': 0.740223365528509, 'nsga2': 0.29542428540531546, 'pddr_local_search_delete_only': 1.7346052091568709}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.254007 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.444799 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.43918 r_rb=-1.0000
+letter (n=25):
+  test_error: Friedman p=0.0120345; means={'pep_paper': 0.031529999999999996, 'mdep_paper': 0.03085, 'nsga2': 0.03221, 'pddr_local_search_delete_only': 0.03138}
+    pep_paper W/T/L=9/13/3 p=0.053963 Holm=0.053963 improvement=+0.00068 r_rb=+0.6282
+    mdep_paper W/T/L=14/8/3 p=0.00111934 Holm=0.00335803 improvement=+0.00136 r_rb=+0.8954
+    pddr_local_search_delete_only W/T/L=11/11/3 p=0.0168382 Holm=0.0336765 improvement=+0.00083 r_rb=+0.7238
+  selected_count: Friedman p=4.6096e-07; means={'pep_paper': 3.0, 'mdep_paper': 1.48, 'nsga2': 3.76, 'pddr_local_search_delete_only': 2.44}
+    pep_paper W/T/L=9/14/2 p=0.0723421 Holm=0.0723421 improvement=+0.76 r_rb=+0.6061
+    mdep_paper W/T/L=16/9/0 p=0.000293969 Holm=0.000881908 improvement=+2.28 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=12/13/0 p=0.00195784 Holm=0.00391567 improvement=+1.32 r_rb=+1.0000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.051008385196328165, 'mdep_paper': 6.184022314557805, 'nsga2': 0.2905506511637941, 'pddr_local_search_delete_only': 1.647426187484525}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.239542 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-5.89347 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.35688 r_rb=-1.0000
+magic (n=25):
+  test_error: Friedman p=0.268684; means={'pep_paper': 0.12245005257623554, 'mdep_paper': 0.12212407991587801, 'nsga2': 0.12321766561514196, 'pddr_local_search_delete_only': 0.12211356466876971}
+    pep_paper W/T/L=8/12/5 p=0.220483 Holm=0.373404 improvement=+0.000767613 r_rb=+0.3846
+    mdep_paper W/T/L=10/10/5 p=0.124468 Holm=0.373404 improvement=+0.00109359 r_rb=+0.4500
+    pddr_local_search_delete_only W/T/L=9/11/5 p=0.13956 Holm=0.373404 improvement=+0.0011041 r_rb=+0.4476
+  selected_count: Friedman p=0.000271307; means={'pep_paper': 2.2, 'mdep_paper': 2.04, 'nsga2': 2.84, 'pddr_local_search_delete_only': 2.12}
+    pep_paper W/T/L=8/17/0 p=0.00467773 Holm=0.0140332 improvement=+0.64 r_rb=+1.0000
+    mdep_paper W/T/L=8/17/0 p=0.00829922 Holm=0.0140332 improvement=+0.8 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=8/17/0 p=0.00665561 Holm=0.0140332 improvement=+0.72 r_rb=+1.0000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.03555499426554889, 'mdep_paper': 2.496107706427574, 'nsga2': 0.233137312293984, 'pddr_local_search_delete_only': 1.1809327386505901}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.197582 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-2.26297 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.947795 r_rb=-1.0000
+optdigits (n=25):
+  test_error: Friedman p=0.213928; means={'pep_paper': 0.014661921708185054, 'mdep_paper': 0.014982206405693952, 'nsga2': 0.014590747330960854, 'pddr_local_search_delete_only': 0.014590747330960854}
+    pep_paper W/T/L=6/12/7 p=0.505312 Holm=1 improvement=-7.11744e-05 r_rb=-0.2088
+    mdep_paper W/T/L=7/5/13 p=0.230144 Holm=0.690432 improvement=-0.000391459 r_rb=-0.3048
+    pddr_local_search_delete_only W/T/L=4/17/4 p=0.672527 Holm=1 improvement=-2.77556e-19 r_rb=-0.1667
+  selected_count: Friedman p=1.76323e-10; means={'pep_paper': 4.84, 'mdep_paper': 3.32, 'nsga2': 5.12, 'pddr_local_search_delete_only': 4.8}
+    pep_paper W/T/L=6/17/2 p=0.148915 Holm=0.262261 improvement=+0.28 r_rb=+0.5556
+    mdep_paper W/T/L=21/4/0 p=4.5586e-05 Holm=0.000136758 improvement=+1.8 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=5/19/1 p=0.131131 Holm=0.262261 improvement=+0.32 r_rb=+0.6667
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.038000372578389945, 'mdep_paper': 1.9577323406748475, 'nsga2': 0.2352027550386265, 'pddr_local_search_delete_only': 1.178184494804591}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.197202 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.72253 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.942982 r_rb=-1.0000
+page_blocks (n=25):
+  test_error: Friedman p=0.323532; means={'pep_paper': 0.02824725985658594, 'mdep_paper': 0.02850300101007571, 'nsga2': 0.02832051956291269, 'pddr_local_search_delete_only': 0.028174233886788046}
+    pep_paper W/T/L=3/16/6 p=0.952303 Holm=1 improvement=+7.32597e-05 r_rb=-0.0222
+    mdep_paper W/T/L=3/15/7 p=0.95906 Holm=1 improvement=-0.000182481 r_rb=-0.0182
+    pddr_local_search_delete_only W/T/L=2/20/3 p=0.68447 Holm=1 improvement=+0.000146286 r_rb=+0.2000
+  selected_count: Friedman p=0.000130823; means={'pep_paper': 3.48, 'mdep_paper': 2.8, 'nsga2': 3.56, 'pddr_local_search_delete_only': 3.48}
+    pep_paper W/T/L=2/22/1 p=0.563703 Holm=1 improvement=+0.08 r_rb=+0.3333
+    mdep_paper W/T/L=8/17/0 p=0.00965387 Holm=0.0289616 improvement=+0.76 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=2/22/1 p=0.563703 Holm=1 improvement=+0.08 r_rb=+0.3333
+  algorithm_runtime_seconds: Friedman p=3.7976e-13; means={'pep_paper': 0.06248693191446364, 'mdep_paper': 1.2172244931571186, 'nsga2': 0.44573233536444606, 'pddr_local_search_delete_only': 1.7898588074324653}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.383245 r_rb=+1.0000
+    mdep_paper W/T/L=3/0/22 p=8.34465e-07 Holm=8.34465e-07 improvement=-0.771492 r_rb=-0.9631
+    pddr_local_search_delete_only W/T/L=1/0/24 p=1.19209e-07 Holm=2.38419e-07 improvement=-1.34413 r_rb=-0.9938
+segment (n=25):
+  test_error: Friedman p=0.158369; means={'pep_paper': 0.02761904761904762, 'mdep_paper': 0.02761904761904762, 'nsga2': 0.027012987012987013, 'pddr_local_search_delete_only': 0.027792207792207795}
+    pep_paper W/T/L=2/17/6 p=0.392571 Holm=0.785141 improvement=-0.000606061 r_rb=-0.3333
+    mdep_paper W/T/L=3/16/6 p=0.855922 Holm=0.855922 improvement=-0.000606061 r_rb=-0.0667
+    pddr_local_search_delete_only W/T/L=1/18/6 p=0.142691 Holm=0.428072 improvement=-0.000779221 r_rb=-0.6071
+  selected_count: Friedman p=3.7696e-06; means={'pep_paper': 2.0, 'mdep_paper': 1.52, 'nsga2': 2.56, 'pddr_local_search_delete_only': 2.0}
+    pep_paper W/T/L=9/16/0 p=0.0061699 Holm=0.0123398 improvement=+0.56 r_rb=+1.0000
+    mdep_paper W/T/L=13/12/0 p=0.00128482 Holm=0.00385447 improvement=+1.04 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=9/16/0 p=0.0061699 Holm=0.0123398 improvement=+0.56 r_rb=+1.0000
+  algorithm_runtime_seconds: Friedman p=1.26253e-14; means={'pep_paper': 0.032463412606157364, 'mdep_paper': 1.1448930464824663, 'nsga2': 0.2173172555072233, 'pddr_local_search_delete_only': 1.158227543993853}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.184854 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.927576 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.94091 r_rb=-1.0000
+semeion (n=25):
+  test_error: Friedman p=0.201833; means={'pep_paper': 0.06365489639399854, 'mdep_paper': 0.06503381242483389, 'nsga2': 0.0645350052246604, 'pddr_local_search_delete_only': 0.0657889237199582}
+    pep_paper W/T/L=11/5/9 p=0.443166 Holm=0.886332 improvement=+0.000880109 r_rb=+0.1952
+    mdep_paper W/T/L=16/2/7 p=0.975697 Holm=0.975697 improvement=-0.000498807 r_rb=+0.0072
+    pddr_local_search_delete_only W/T/L=5/14/6 p=0.194882 Holm=0.584646 improvement=-0.00125392 r_rb=-0.4394
+  selected_count: Friedman p=0.000514065; means={'pep_paper': 3.84, 'mdep_paper': 2.36, 'nsga2': 4.08, 'pddr_local_search_delete_only': 3.64}
+    pep_paper W/T/L=5/16/4 p=0.30879 Holm=0.30879 improvement=+0.24 r_rb=+0.3778
+    mdep_paper W/T/L=15/7/3 p=0.000941938 Holm=0.00282581 improvement=+1.72 r_rb=+0.8830
+    pddr_local_search_delete_only W/T/L=6/17/2 p=0.0639651 Holm=0.12793 improvement=+0.44 r_rb=+0.7222
+  algorithm_runtime_seconds: Friedman p=7.68195e-15; means={'pep_paper': 0.08815761954989285, 'mdep_paper': 0.9799054592614993, 'nsga2': 0.5286272683460266, 'pddr_local_search_delete_only': 2.738595635481179}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.44047 r_rb=+1.0000
+    mdep_paper W/T/L=5/0/20 p=0.014722 Holm=0.014722 improvement=-0.451278 r_rb=-0.5508
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-2.20997 r_rb=-1.0000
+spambase (n=25):
+  test_error: Friedman p=0.336479; means={'pep_paper': 0.04998748996837086, 'mdep_paper': 0.04959675211254307, 'nsga2': 0.05055247132134258, 'pddr_local_search_delete_only': 0.05072595949582213}
+    pep_paper W/T/L=7/14/4 p=0.180582 Holm=0.361164 improvement=+0.000564981 r_rb=+0.4545
+    mdep_paper W/T/L=10/11/4 p=0.058531 Holm=0.175593 improvement=+0.000955719 r_rb=+0.5714
+    pddr_local_search_delete_only W/T/L=6/12/7 p=0.972057 Holm=0.972057 improvement=-0.000173488 r_rb=+0.0110
+  selected_count: Friedman p=0.000185855; means={'pep_paper': 2.6, 'mdep_paper': 2.52, 'nsga2': 3.52, 'pddr_local_search_delete_only': 3.08}
+    pep_paper W/T/L=11/14/0 p=0.00252483 Holm=0.00757449 improvement=+0.92 r_rb=+1.0000
+    mdep_paper W/T/L=16/7/2 p=0.00529009 Holm=0.0105802 improvement=+1 r_rb=+0.7310
+    pddr_local_search_delete_only W/T/L=8/14/3 p=0.216608 Holm=0.216608 improvement=+0.44 r_rb=+0.4091
+  algorithm_runtime_seconds: Friedman p=7.15556e-15; means={'pep_paper': 0.03578292356804013, 'mdep_paper': 1.2046688105119392, 'nsga2': 0.23457851668354124, 'pddr_local_search_delete_only': 1.2095855026785285}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.198796 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.97009 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.975007 r_rb=-1.0000
+vehicle (n=25):
+  test_error: Friedman p=0.0873092; means={'pep_paper': 0.2021301775147929, 'mdep_paper': 0.20568047337278106, 'nsga2': 0.20355029585798814, 'pddr_local_search_delete_only': 0.1985798816568047}
+    pep_paper W/T/L=6/15/4 p=0.608195 Holm=1 improvement=+0.00142012 r_rb=+0.1818
+    mdep_paper W/T/L=5/13/7 p=0.608878 Holm=1 improvement=-0.00213018 r_rb=-0.1667
+    pddr_local_search_delete_only W/T/L=6/18/1 p=0.0339662 Holm=0.101899 improvement=+0.00497041 r_rb=+0.8929
+  selected_count: Friedman p=0.00215163; means={'pep_paper': 2.44, 'mdep_paper': 2.32, 'nsga2': 3.24, 'pddr_local_search_delete_only': 2.0}
+    pep_paper W/T/L=9/13/3 p=0.121702 Holm=0.121702 improvement=+0.8 r_rb=+0.5000
+    mdep_paper W/T/L=9/13/3 p=0.0174847 Holm=0.0349693 improvement=+0.92 r_rb=+0.7692
+    pddr_local_search_delete_only W/T/L=10/15/0 p=0.00448198 Holm=0.0134459 improvement=+1.24 r_rb=+1.0000
+  algorithm_runtime_seconds: Friedman p=3.62332e-16; means={'pep_paper': 0.038567197914235296, 'mdep_paper': 0.7554952025599778, 'nsga2': 0.2464041722845286, 'pddr_local_search_delete_only': 1.325541381686926}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.207837 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.509091 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.07914 r_rb=-1.0000
+wine (n=25):
+  test_error: Friedman p=0.00079084; means={'pep_paper': 0.024571428571428567, 'mdep_paper': 0.016825396825396823, 'nsga2': 0.02682539682539682, 'pddr_local_search_delete_only': 0.027936507936507936}
+    pep_paper W/T/L=5/18/2 p=0.4829 Holm=0.634621 improvement=+0.00225397 r_rb=+0.2857
+    mdep_paper W/T/L=9/16/0 p=0.0026998 Holm=0.00809939 improvement=+0.01 r_rb=+1.0000
+    pddr_local_search_delete_only W/T/L=0/24/1 p=0.317311 Holm=0.634621 improvement=-0.00111111 r_rb=-1.0000
+  selected_count: Friedman p=2.498e-05; means={'pep_paper': 1.4, 'mdep_paper': 1.0, 'nsga2': 1.0, 'pddr_local_search_delete_only': 1.0}
+    pep_paper W/T/L=0/17/8 p=0.00829922 Holm=0.0248976 improvement=-0.4 r_rb=-1.0000
+    mdep_paper W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+    pddr_local_search_delete_only W/T/L=0/25/0 p=1 Holm=1 improvement=+0 r_rb=+0.0000
+  algorithm_runtime_seconds: Friedman p=1.72943e-15; means={'pep_paper': 0.03859233487397432, 'mdep_paper': 1.1001312675094232, 'nsga2': 0.27776972830295565, 'pddr_local_search_delete_only': 1.5095938028115778}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.239177 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.822362 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-1.23182 r_rb=-1.0000
+yeast (n=25):
+  test_error: Friedman p=0.845784; means={'pep_paper': 0.3948507598507598, 'mdep_paper': 0.399017199017199, 'nsga2': 0.3978123578123578, 'pddr_local_search_delete_only': 0.399023114023114}
+    pep_paper W/T/L=9/8/8 p=0.600824 Holm=1 improvement=+0.0029616 r_rb=+0.1438
+    mdep_paper W/T/L=13/2/10 p=0.854691 Holm=1 improvement=-0.00120484 r_rb=-0.0435
+    pddr_local_search_delete_only W/T/L=5/18/2 p=0.865534 Holm=1 improvement=-0.00121076 r_rb=+0.0714
+  selected_count: Friedman p=9.57878e-08; means={'pep_paper': 4.6, 'mdep_paper': 2.64, 'nsga2': 5.52, 'pddr_local_search_delete_only': 5.32}
+    pep_paper W/T/L=9/15/1 p=0.00889028 Holm=0.0177806 improvement=+0.92 r_rb=+0.9273
+    mdep_paper W/T/L=21/2/2 p=6.22579e-05 Holm=0.000186774 improvement=+2.88 r_rb=+0.9493
+    pddr_local_search_delete_only W/T/L=5/20/0 p=0.0253473 Holm=0.0253473 improvement=+0.2 r_rb=+1.0000
+  algorithm_runtime_seconds: Friedman p=6.39714e-16; means={'pep_paper': 0.04629843411501497, 'mdep_paper': 0.952348448834382, 'nsga2': 0.23193161545787006, 'pddr_local_search_delete_only': 1.1906427778396755}
+    pep_paper W/T/L=25/0/0 p=5.96046e-08 Holm=1.78814e-07 improvement=+0.185633 r_rb=+1.0000
+    mdep_paper W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.720417 r_rb=-1.0000
+    pddr_local_search_delete_only W/T/L=0/0/25 p=5.96046e-08 Holm=1.78814e-07 improvement=-0.958711 r_rb=-1.0000
+
+[Pooled common metrics: descriptive only]
+  test_error: n=350 means={'pep_paper': 0.07901538783683161, 'mdep_paper': 0.07971759247937893, 'nsga2': 0.07890733594112291, 'pddr_local_search_delete_only': 0.07867396478734687}
+  selected_count: n=350 means={'pep_paper': 2.9, 'mdep_paper': 2.1714285714285713, 'nsga2': 3.2342857142857144, 'pddr_local_search_delete_only': 2.8257142857142856}
+  algorithm_runtime_seconds: n=350 means={'pep_paper': 0.04490745589702523, 'mdep_paper': 1.6542076998509998, 'nsga2': 0.2865729450607406, 'pddr_local_search_delete_only': 1.4731262439958352}
+
+[Native objective-space summaries]
+mdep_native / mdep_paper:
+  banknote (n=25): HV=1.331000, IGD+=0.000000, gap=0.000000, coverage=1.0000
+  breast_cancer (n=25): HV=0.570375, IGD+=0.035339, gap=0.037994, coverage=0.8613
+  dry_bean (n=25): HV=0.725070, IGD+=0.053431, gap=0.089315, coverage=0.5396
+  iris (n=25): HV=1.331000, IGD+=0.000000, gap=0.000000, coverage=1.0000
+  letter (n=25): HV=0.310398, IGD+=0.274979, gap=0.245344, coverage=0.4893
+  magic (n=25): HV=0.567731, IGD+=0.057153, gap=0.064736, coverage=0.6608
+  optdigits (n=25): HV=0.526678, IGD+=0.147136, gap=0.137455, coverage=0.5830
+  page_blocks (n=25): HV=0.654079, IGD+=0.056329, gap=0.075534, coverage=0.7289
+  segment (n=25): HV=0.934693, IGD+=0.086284, gap=0.015627, coverage=0.8900
+  semeion (n=25): HV=0.545830, IGD+=0.189156, gap=0.236236, coverage=0.4438
+  spambase (n=25): HV=0.606654, IGD+=0.132610, gap=0.157402, coverage=0.4904
+  vehicle (n=25): HV=0.645885, IGD+=0.032104, gap=0.051844, coverage=0.7727
+  wine (n=25): HV=1.331000, IGD+=0.000000, gap=0.000000, coverage=1.0000
+  yeast (n=25): HV=0.544197, IGD+=0.071801, gap=0.115378, coverage=0.3756
+pep_native / pep_paper:
+  banknote (n=25): HV=0.906286, IGD+=0.290372, gap=0.303714, coverage=0.6400
+  breast_cancer (n=25): HV=0.664167, IGD+=0.217370, gap=0.250000, coverage=0.6000
+  dry_bean (n=25): HV=0.778783, IGD+=0.102561, gap=0.200402, coverage=0.4547
+  iris (n=25): HV=0.990000, IGD+=0.213137, gap=0.220000, coverage=0.7600
+  letter (n=25): HV=0.772369, IGD+=0.246604, gap=0.410338, coverage=0.6400
+  magic (n=25): HV=0.826000, IGD+=0.046103, gap=0.084000, coverage=0.9400
+  optdigits (n=25): HV=0.685018, IGD+=0.141181, gap=0.313800, coverage=0.5667
+  page_blocks (n=25): HV=0.456286, IGD+=0.125878, gap=0.234190, coverage=0.7467
+  segment (n=25): HV=0.980490, IGD+=0.093503, gap=0.190735, coverage=0.8467
+  semeion (n=25): HV=0.648111, IGD+=0.141560, gap=0.273111, coverage=0.6067
+  spambase (n=25): HV=0.636632, IGD+=0.142504, gap=0.227140, coverage=0.7800
+  vehicle (n=25): HV=0.750246, IGD+=0.073907, gap=0.093871, coverage=0.8067
+  wine (n=25): HV=0.940000, IGD+=0.260000, gap=0.270000, coverage=0.6800
+  yeast (n=25): HV=0.724157, IGD+=0.113219, gap=0.200451, coverage=0.5967
+
+Boundary: PEP native two-objective and MDEP native three-objective metrics are reported separately.

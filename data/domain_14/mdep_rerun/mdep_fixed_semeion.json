@@ -1,0 +1,4293 @@
+[
+  {
+    "dataset": "semeion",
+    "fold": 0,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 1,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.043137254901960784,
+        0.44557268799850613,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.043137254901960784,
+      0.44557268799850613,
+      0.08333333333333333
+    ],
+    "test_error": 0.06269592476489028,
+    "test_margin_loss": 0.12539184952978055,
+    "selected_count": 1,
+    "objective_context_id": "2d7292f7806b1648d93bd3e2973fb2e93e892fd9832587257cc28ec40a27ac54",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.02918420499190688,
+        0.1100977499736473,
+        0.41829938907176256,
+        0.42056043399497867,
+        0.42772265209350735,
+        0.41975858400110155,
+        0.0017441040836274624,
+        0.001751044997945428,
+        0.044301544898189604,
+        0.042739222990348935,
+        0.0016197259537875652,
+        0.015950030996464193
+      ],
+      "storage_bytes": [
+        3134367,
+        12520290,
+        2166513,
+        2117661,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        8826,
+        41713
+      ],
+      "combined_costs": [
+        0.0624258782682848,
+        0.24768609283077597,
+        0.14609233874344116,
+        0.14582162017519434,
+        0.14852889126500007,
+        0.14646963958671833,
+        0.0008250499905281875,
+        0.0008268446875714873,
+        0.04814987359400434,
+        0.047745907433317566,
+        0.0005733438568027427,
+        0.004854519568360955
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "cc46418e72530e3964bc2a3930eba1c2c7fd555c53d21bae4d7fd2e5bb5e957e",
+      "validation_labels_sha256": "5905d4ad6876d4d37eb691abe206e49f37c0635ef2a4305b01b5586727df7b98",
+      "test_predictions_sha256": "700858e85e20503071ab3198884dd6238580b4dc018f4d0749b11e8c242b911c",
+      "test_labels_sha256": "f0c8d4f0d282cbc02b00a10bbf55a506a3a07c42ccfa45b02e01eda42c04455f"
+    },
+    "optimization_seed": 20260820,
+    "algorithm_runtime_seconds": 1.0795649100327864
+  },
+  {
+    "dataset": "semeion",
+    "fold": 0,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.0392156862745098,
+        0.42531595770273334,
+        0.25
+      ],
+      [
+        0.043137254901960784,
+        0.44557268799850613,
+        0.08333333333333333
+      ],
+      [
+        0.047058823529411764,
+        0.428066564643769,
+        0.16666666666666666
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.0392156862745098,
+      0.42531595770273334,
+      0.25
+    ],
+    "test_error": 0.05956112852664577,
+    "test_margin_loss": 0.14629049111807735,
+    "selected_count": 3,
+    "objective_context_id": "2d7292f7806b1648d93bd3e2973fb2e93e892fd9832587257cc28ec40a27ac54",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.02918420499190688,
+        0.1100977499736473,
+        0.41829938907176256,
+        0.42056043399497867,
+        0.42772265209350735,
+        0.41975858400110155,
+        0.0017441040836274624,
+        0.001751044997945428,
+        0.044301544898189604,
+        0.042739222990348935,
+        0.0016197259537875652,
+        0.015950030996464193
+      ],
+      "storage_bytes": [
+        3134367,
+        12520290,
+        2166513,
+        2117661,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        8826,
+        41713
+      ],
+      "combined_costs": [
+        0.0624258782682848,
+        0.24768609283077597,
+        0.14609233874344116,
+        0.14582162017519434,
+        0.14852889126500007,
+        0.14646963958671833,
+        0.0008250499905281875,
+        0.0008268446875714873,
+        0.04814987359400434,
+        0.047745907433317566,
+        0.0005733438568027427,
+        0.004854519568360955
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "cc46418e72530e3964bc2a3930eba1c2c7fd555c53d21bae4d7fd2e5bb5e957e",
+      "validation_labels_sha256": "5905d4ad6876d4d37eb691abe206e49f37c0635ef2a4305b01b5586727df7b98",
+      "test_predictions_sha256": "700858e85e20503071ab3198884dd6238580b4dc018f4d0749b11e8c242b911c",
+      "test_labels_sha256": "f0c8d4f0d282cbc02b00a10bbf55a506a3a07c42ccfa45b02e01eda42c04455f"
+    },
+    "optimization_seed": 20260821,
+    "algorithm_runtime_seconds": 0.9759984170086682
+  },
+  {
+    "dataset": "semeion",
+    "fold": 0,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 2,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.428066564643769,
+        0.16666666666666666
+      ],
+      [
+        0.043137254901960784,
+        0.44557268799850613,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.043137254901960784,
+      0.44557268799850613,
+      0.08333333333333333
+    ],
+    "test_error": 0.06269592476489028,
+    "test_margin_loss": 0.12539184952978055,
+    "selected_count": 1,
+    "objective_context_id": "2d7292f7806b1648d93bd3e2973fb2e93e892fd9832587257cc28ec40a27ac54",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.02918420499190688,
+        0.1100977499736473,
+        0.41829938907176256,
+        0.42056043399497867,
+        0.42772265209350735,
+        0.41975858400110155,
+        0.0017441040836274624,
+        0.001751044997945428,
+        0.044301544898189604,
+        0.042739222990348935,
+        0.0016197259537875652,
+        0.015950030996464193
+      ],
+      "storage_bytes": [
+        3134367,
+        12520290,
+        2166513,
+        2117661,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        8826,
+        41713
+      ],
+      "combined_costs": [
+        0.0624258782682848,
+        0.24768609283077597,
+        0.14609233874344116,
+        0.14582162017519434,
+        0.14852889126500007,
+        0.14646963958671833,
+        0.0008250499905281875,
+        0.0008268446875714873,
+        0.04814987359400434,
+        0.047745907433317566,
+        0.0005733438568027427,
+        0.004854519568360955
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "cc46418e72530e3964bc2a3930eba1c2c7fd555c53d21bae4d7fd2e5bb5e957e",
+      "validation_labels_sha256": "5905d4ad6876d4d37eb691abe206e49f37c0635ef2a4305b01b5586727df7b98",
+      "test_predictions_sha256": "700858e85e20503071ab3198884dd6238580b4dc018f4d0749b11e8c242b911c",
+      "test_labels_sha256": "f0c8d4f0d282cbc02b00a10bbf55a506a3a07c42ccfa45b02e01eda42c04455f"
+    },
+    "optimization_seed": 20260822,
+    "algorithm_runtime_seconds": 1.0377210270380601
+  },
+  {
+    "dataset": "semeion",
+    "fold": 0,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 1,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.043137254901960784,
+        0.44557268799850613,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.043137254901960784,
+      0.44557268799850613,
+      0.08333333333333333
+    ],
+    "test_error": 0.06269592476489028,
+    "test_margin_loss": 0.12539184952978055,
+    "selected_count": 1,
+    "objective_context_id": "2d7292f7806b1648d93bd3e2973fb2e93e892fd9832587257cc28ec40a27ac54",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.02918420499190688,
+        0.1100977499736473,
+        0.41829938907176256,
+        0.42056043399497867,
+        0.42772265209350735,
+        0.41975858400110155,
+        0.0017441040836274624,
+        0.001751044997945428,
+        0.044301544898189604,
+        0.042739222990348935,
+        0.0016197259537875652,
+        0.015950030996464193
+      ],
+      "storage_bytes": [
+        3134367,
+        12520290,
+        2166513,
+        2117661,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        8826,
+        41713
+      ],
+      "combined_costs": [
+        0.0624258782682848,
+        0.24768609283077597,
+        0.14609233874344116,
+        0.14582162017519434,
+        0.14852889126500007,
+        0.14646963958671833,
+        0.0008250499905281875,
+        0.0008268446875714873,
+        0.04814987359400434,
+        0.047745907433317566,
+        0.0005733438568027427,
+        0.004854519568360955
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "cc46418e72530e3964bc2a3930eba1c2c7fd555c53d21bae4d7fd2e5bb5e957e",
+      "validation_labels_sha256": "5905d4ad6876d4d37eb691abe206e49f37c0635ef2a4305b01b5586727df7b98",
+      "test_predictions_sha256": "700858e85e20503071ab3198884dd6238580b4dc018f4d0749b11e8c242b911c",
+      "test_labels_sha256": "f0c8d4f0d282cbc02b00a10bbf55a506a3a07c42ccfa45b02e01eda42c04455f"
+    },
+    "optimization_seed": 20260823,
+    "algorithm_runtime_seconds": 0.9576877099461854
+  },
+  {
+    "dataset": "semeion",
+    "fold": 0,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 1,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.043137254901960784,
+        0.44557268799850613,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.043137254901960784,
+      0.44557268799850613,
+      0.08333333333333333
+    ],
+    "test_error": 0.06269592476489028,
+    "test_margin_loss": 0.12539184952978055,
+    "selected_count": 1,
+    "objective_context_id": "2d7292f7806b1648d93bd3e2973fb2e93e892fd9832587257cc28ec40a27ac54",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.02918420499190688,
+        0.1100977499736473,
+        0.41829938907176256,
+        0.42056043399497867,
+        0.42772265209350735,
+        0.41975858400110155,
+        0.0017441040836274624,
+        0.001751044997945428,
+        0.044301544898189604,
+        0.042739222990348935,
+        0.0016197259537875652,
+        0.015950030996464193
+      ],
+      "storage_bytes": [
+        3134367,
+        12520290,
+        2166513,
+        2117661,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        8826,
+        41713
+      ],
+      "combined_costs": [
+        0.0624258782682848,
+        0.24768609283077597,
+        0.14609233874344116,
+        0.14582162017519434,
+        0.14852889126500007,
+        0.14646963958671833,
+        0.0008250499905281875,
+        0.0008268446875714873,
+        0.04814987359400434,
+        0.047745907433317566,
+        0.0005733438568027427,
+        0.004854519568360955
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "cc46418e72530e3964bc2a3930eba1c2c7fd555c53d21bae4d7fd2e5bb5e957e",
+      "validation_labels_sha256": "5905d4ad6876d4d37eb691abe206e49f37c0635ef2a4305b01b5586727df7b98",
+      "test_predictions_sha256": "700858e85e20503071ab3198884dd6238580b4dc018f4d0749b11e8c242b911c",
+      "test_labels_sha256": "f0c8d4f0d282cbc02b00a10bbf55a506a3a07c42ccfa45b02e01eda42c04455f"
+    },
+    "optimization_seed": 20260824,
+    "algorithm_runtime_seconds": 0.9369651000015438
+  },
+  {
+    "dataset": "semeion",
+    "fold": 1,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.07058823529411765,
+        0.5031617098969187,
+        0.16666666666666666
+      ],
+      [
+        0.07058823529411765,
+        0.5976535978561703,
+        0.08333333333333333
+      ],
+      [
+        0.06274509803921569,
+        0.49423278768713785,
+        0.3333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.06274509803921569,
+      0.49423278768713785,
+      0.3333333333333333
+    ],
+    "test_error": 0.05642633228840126,
+    "test_margin_loss": 0.15438871473354232,
+    "selected_count": 4,
+    "objective_context_id": "abb074d3184a794a24f32b38cc90603ce04049de999091da6e1f11f76e051ceb",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.029676093952730298,
+        0.10622226807754487,
+        0.4196637290297076,
+        0.4118660029489547,
+        0.42391307605430484,
+        0.4200152629055083,
+        0.001785583095625043,
+        0.0018288609571754932,
+        0.04056573600973934,
+        0.04445361497346312,
+        0.0016487919492647052,
+        0.016688291914761066
+      ],
+      "storage_bytes": [
+        3084831,
+        12437337,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9690,
+        41713
+      ],
+      "combined_costs": [
+        0.06198529087528973,
+        0.24641145485712637,
+        0.14748341709300458,
+        0.14470392756596168,
+        0.14859098278273497,
+        0.14757504219619363,
+        0.000841129853572452,
+        0.0008524099571508895,
+        0.04742978243741658,
+        0.048443133740833186,
+        0.000600157410109145,
+        0.0050832712306067805
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "6d39907fa4bc682ac41ec7c99cb73411ee120c920546da9cd7ef281b95f95843",
+      "validation_labels_sha256": "381e20098f13f17953c31c4b33e205b128e9849b6b0e189e8f6d828f3f6e4174",
+      "test_predictions_sha256": "611043a7eb08ffb761651ca92b3869874194ca81f81f2f3c359b6dd32ae11707",
+      "test_labels_sha256": "d53721c70d73793d0e74e775840cc708c9ee6038e261460a97ef854d229db58a"
+    },
+    "optimization_seed": 20260820,
+    "algorithm_runtime_seconds": 1.0108422950142995
+  },
+  {
+    "dataset": "semeion",
+    "fold": 1,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.054901960784313725,
+        0.4974416399981027,
+        0.25
+      ],
+      [
+        0.07058823529411765,
+        0.5976535978561703,
+        0.08333333333333333
+      ],
+      [
+        0.07058823529411765,
+        0.5031617098969187,
+        0.16666666666666666
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.054901960784313725,
+      0.4974416399981027,
+      0.25
+    ],
+    "test_error": 0.05642633228840126,
+    "test_margin_loss": 0.16196447230929992,
+    "selected_count": 3,
+    "objective_context_id": "abb074d3184a794a24f32b38cc90603ce04049de999091da6e1f11f76e051ceb",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.029676093952730298,
+        0.10622226807754487,
+        0.4196637290297076,
+        0.4118660029489547,
+        0.42391307605430484,
+        0.4200152629055083,
+        0.001785583095625043,
+        0.0018288609571754932,
+        0.04056573600973934,
+        0.04445361497346312,
+        0.0016487919492647052,
+        0.016688291914761066
+      ],
+      "storage_bytes": [
+        3084831,
+        12437337,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9690,
+        41713
+      ],
+      "combined_costs": [
+        0.06198529087528973,
+        0.24641145485712637,
+        0.14748341709300458,
+        0.14470392756596168,
+        0.14859098278273497,
+        0.14757504219619363,
+        0.000841129853572452,
+        0.0008524099571508895,
+        0.04742978243741658,
+        0.048443133740833186,
+        0.000600157410109145,
+        0.0050832712306067805
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "6d39907fa4bc682ac41ec7c99cb73411ee120c920546da9cd7ef281b95f95843",
+      "validation_labels_sha256": "381e20098f13f17953c31c4b33e205b128e9849b6b0e189e8f6d828f3f6e4174",
+      "test_predictions_sha256": "611043a7eb08ffb761651ca92b3869874194ca81f81f2f3c359b6dd32ae11707",
+      "test_labels_sha256": "d53721c70d73793d0e74e775840cc708c9ee6038e261460a97ef854d229db58a"
+    },
+    "optimization_seed": 20260821,
+    "algorithm_runtime_seconds": 0.9558472819626331
+  },
+  {
+    "dataset": "semeion",
+    "fold": 1,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 4,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.06274509803921569,
+        0.49423278768713785,
+        0.3333333333333333
+      ],
+      [
+        0.054901960784313725,
+        0.4974416399981027,
+        0.25
+      ],
+      [
+        0.07058823529411765,
+        0.5031617098969187,
+        0.16666666666666666
+      ],
+      [
+        0.07058823529411765,
+        0.5976535978561703,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.054901960784313725,
+      0.4974416399981027,
+      0.25
+    ],
+    "test_error": 0.05642633228840126,
+    "test_margin_loss": 0.16196447230929992,
+    "selected_count": 3,
+    "objective_context_id": "abb074d3184a794a24f32b38cc90603ce04049de999091da6e1f11f76e051ceb",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.029676093952730298,
+        0.10622226807754487,
+        0.4196637290297076,
+        0.4118660029489547,
+        0.42391307605430484,
+        0.4200152629055083,
+        0.001785583095625043,
+        0.0018288609571754932,
+        0.04056573600973934,
+        0.04445361497346312,
+        0.0016487919492647052,
+        0.016688291914761066
+      ],
+      "storage_bytes": [
+        3084831,
+        12437337,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9690,
+        41713
+      ],
+      "combined_costs": [
+        0.06198529087528973,
+        0.24641145485712637,
+        0.14748341709300458,
+        0.14470392756596168,
+        0.14859098278273497,
+        0.14757504219619363,
+        0.000841129853572452,
+        0.0008524099571508895,
+        0.04742978243741658,
+        0.048443133740833186,
+        0.000600157410109145,
+        0.0050832712306067805
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "6d39907fa4bc682ac41ec7c99cb73411ee120c920546da9cd7ef281b95f95843",
+      "validation_labels_sha256": "381e20098f13f17953c31c4b33e205b128e9849b6b0e189e8f6d828f3f6e4174",
+      "test_predictions_sha256": "611043a7eb08ffb761651ca92b3869874194ca81f81f2f3c359b6dd32ae11707",
+      "test_labels_sha256": "d53721c70d73793d0e74e775840cc708c9ee6038e261460a97ef854d229db58a"
+    },
+    "optimization_seed": 20260822,
+    "algorithm_runtime_seconds": 0.9557106479769573
+  },
+  {
+    "dataset": "semeion",
+    "fold": 1,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 1,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.07058823529411765,
+        0.5976535978561703,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.07058823529411765,
+      0.5976535978561703,
+      0.08333333333333333
+    ],
+    "test_error": 0.07523510971786834,
+    "test_margin_loss": 0.15047021943573669,
+    "selected_count": 1,
+    "objective_context_id": "abb074d3184a794a24f32b38cc90603ce04049de999091da6e1f11f76e051ceb",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.029676093952730298,
+        0.10622226807754487,
+        0.4196637290297076,
+        0.4118660029489547,
+        0.42391307605430484,
+        0.4200152629055083,
+        0.001785583095625043,
+        0.0018288609571754932,
+        0.04056573600973934,
+        0.04445361497346312,
+        0.0016487919492647052,
+        0.016688291914761066
+      ],
+      "storage_bytes": [
+        3084831,
+        12437337,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9690,
+        41713
+      ],
+      "combined_costs": [
+        0.06198529087528973,
+        0.24641145485712637,
+        0.14748341709300458,
+        0.14470392756596168,
+        0.14859098278273497,
+        0.14757504219619363,
+        0.000841129853572452,
+        0.0008524099571508895,
+        0.04742978243741658,
+        0.048443133740833186,
+        0.000600157410109145,
+        0.0050832712306067805
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "6d39907fa4bc682ac41ec7c99cb73411ee120c920546da9cd7ef281b95f95843",
+      "validation_labels_sha256": "381e20098f13f17953c31c4b33e205b128e9849b6b0e189e8f6d828f3f6e4174",
+      "test_predictions_sha256": "611043a7eb08ffb761651ca92b3869874194ca81f81f2f3c359b6dd32ae11707",
+      "test_labels_sha256": "d53721c70d73793d0e74e775840cc708c9ee6038e261460a97ef854d229db58a"
+    },
+    "optimization_seed": 20260823,
+    "algorithm_runtime_seconds": 0.9533311020350084
+  },
+  {
+    "dataset": "semeion",
+    "fold": 1,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.054901960784313725,
+        0.4974416399981027,
+        0.25
+      ],
+      [
+        0.07058823529411765,
+        0.5976535978561703,
+        0.08333333333333333
+      ],
+      [
+        0.07058823529411765,
+        0.5031617098969187,
+        0.16666666666666666
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.054901960784313725,
+      0.4974416399981027,
+      0.25
+    ],
+    "test_error": 0.05642633228840126,
+    "test_margin_loss": 0.16196447230929992,
+    "selected_count": 3,
+    "objective_context_id": "abb074d3184a794a24f32b38cc90603ce04049de999091da6e1f11f76e051ceb",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.029676093952730298,
+        0.10622226807754487,
+        0.4196637290297076,
+        0.4118660029489547,
+        0.42391307605430484,
+        0.4200152629055083,
+        0.001785583095625043,
+        0.0018288609571754932,
+        0.04056573600973934,
+        0.04445361497346312,
+        0.0016487919492647052,
+        0.016688291914761066
+      ],
+      "storage_bytes": [
+        3084831,
+        12437337,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9690,
+        41713
+      ],
+      "combined_costs": [
+        0.06198529087528973,
+        0.24641145485712637,
+        0.14748341709300458,
+        0.14470392756596168,
+        0.14859098278273497,
+        0.14757504219619363,
+        0.000841129853572452,
+        0.0008524099571508895,
+        0.04742978243741658,
+        0.048443133740833186,
+        0.000600157410109145,
+        0.0050832712306067805
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "6d39907fa4bc682ac41ec7c99cb73411ee120c920546da9cd7ef281b95f95843",
+      "validation_labels_sha256": "381e20098f13f17953c31c4b33e205b128e9849b6b0e189e8f6d828f3f6e4174",
+      "test_predictions_sha256": "611043a7eb08ffb761651ca92b3869874194ca81f81f2f3c359b6dd32ae11707",
+      "test_labels_sha256": "d53721c70d73793d0e74e775840cc708c9ee6038e261460a97ef854d229db58a"
+    },
+    "optimization_seed": 20260824,
+    "algorithm_runtime_seconds": 0.9389275029534474
+  },
+  {
+    "dataset": "semeion",
+    "fold": 2,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 2,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.058823529411764705,
+        0.42188066115274014,
+        0.16666666666666666
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.047058823529411764,
+      0.4684519029683023,
+      0.08333333333333333
+    ],
+    "test_error": 0.07836990595611286,
+    "test_margin_loss": 0.15673981191222572,
+    "selected_count": 1,
+    "objective_context_id": "4aafbbb26bf1cdf66c752cd42e7a91dd98e9f9157c5804342ba407822a384633",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.003715377999469638,
+        0.015456238063052297,
+        0.057284921989776194,
+        0.051474355976097286,
+        0.05390506703406572,
+        0.05184643901884556,
+        0.00021215202286839485,
+        0.00019441195763647556,
+        0.0048894420033320785,
+        0.0057313250144943595,
+        0.00017867493443191051,
+        0.0018593940185382962
+      ],
+      "storage_bytes": [
+        3103560,
+        12406548,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9114,
+        41713
+      ],
+      "combined_costs": [
+        0.06213273786320329,
+        0.2496007478029093,
+        0.1541975394829533,
+        0.14167584469440186,
+        0.1473487348426205,
+        0.14317721231040723,
+        0.0008057923476670794,
+        0.0007698445798864246,
+        0.04678073737643566,
+        0.048486695871407096,
+        0.0005224115720682312,
+        0.0045017012560399985
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "69089a42772a19411952d42789ea5c39c69d913963f00e17902faa78fc10f67d",
+      "validation_labels_sha256": "86e02f25ca325d1884616076151b8c2b2062aeed0ebb0dd8039b567d0fcd8aab",
+      "test_predictions_sha256": "12d85eb670d15cab04311acd5d3c167c0804daf8e5b0d00d5659659e3c30d961",
+      "test_labels_sha256": "3fe5cdb5c0662e1eb07f02e98fecf8d1f2d7030c75b66ab8dede5c3efc39dca3"
+    },
+    "optimization_seed": 20260820,
+    "algorithm_runtime_seconds": 1.0469667919678614
+  },
+  {
+    "dataset": "semeion",
+    "fold": 2,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.043137254901960784,
+        0.44051661166315903,
+        0.25
+      ],
+      [
+        0.050980392156862744,
+        0.42312567359604714,
+        0.25
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.043137254901960784,
+      0.44051661166315903,
+      0.25
+    ],
+    "test_error": 0.05642633228840126,
+    "test_margin_loss": 0.1452455590386625,
+    "selected_count": 3,
+    "objective_context_id": "4aafbbb26bf1cdf66c752cd42e7a91dd98e9f9157c5804342ba407822a384633",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.003715377999469638,
+        0.015456238063052297,
+        0.057284921989776194,
+        0.051474355976097286,
+        0.05390506703406572,
+        0.05184643901884556,
+        0.00021215202286839485,
+        0.00019441195763647556,
+        0.0048894420033320785,
+        0.0057313250144943595,
+        0.00017867493443191051,
+        0.0018593940185382962
+      ],
+      "storage_bytes": [
+        3103560,
+        12406548,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9114,
+        41713
+      ],
+      "combined_costs": [
+        0.06213273786320329,
+        0.2496007478029093,
+        0.1541975394829533,
+        0.14167584469440186,
+        0.1473487348426205,
+        0.14317721231040723,
+        0.0008057923476670794,
+        0.0007698445798864246,
+        0.04678073737643566,
+        0.048486695871407096,
+        0.0005224115720682312,
+        0.0045017012560399985
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "69089a42772a19411952d42789ea5c39c69d913963f00e17902faa78fc10f67d",
+      "validation_labels_sha256": "86e02f25ca325d1884616076151b8c2b2062aeed0ebb0dd8039b567d0fcd8aab",
+      "test_predictions_sha256": "12d85eb670d15cab04311acd5d3c167c0804daf8e5b0d00d5659659e3c30d961",
+      "test_labels_sha256": "3fe5cdb5c0662e1eb07f02e98fecf8d1f2d7030c75b66ab8dede5c3efc39dca3"
+    },
+    "optimization_seed": 20260821,
+    "algorithm_runtime_seconds": 0.9863792828982696
+  },
+  {
+    "dataset": "semeion",
+    "fold": 2,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.058823529411764705,
+        0.42188066115274014,
+        0.16666666666666666
+      ],
+      [
+        0.050980392156862744,
+        0.42312567359604714,
+        0.25
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.047058823529411764,
+      0.4684519029683023,
+      0.08333333333333333
+    ],
+    "test_error": 0.07836990595611286,
+    "test_margin_loss": 0.15673981191222572,
+    "selected_count": 1,
+    "objective_context_id": "4aafbbb26bf1cdf66c752cd42e7a91dd98e9f9157c5804342ba407822a384633",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.003715377999469638,
+        0.015456238063052297,
+        0.057284921989776194,
+        0.051474355976097286,
+        0.05390506703406572,
+        0.05184643901884556,
+        0.00021215202286839485,
+        0.00019441195763647556,
+        0.0048894420033320785,
+        0.0057313250144943595,
+        0.00017867493443191051,
+        0.0018593940185382962
+      ],
+      "storage_bytes": [
+        3103560,
+        12406548,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9114,
+        41713
+      ],
+      "combined_costs": [
+        0.06213273786320329,
+        0.2496007478029093,
+        0.1541975394829533,
+        0.14167584469440186,
+        0.1473487348426205,
+        0.14317721231040723,
+        0.0008057923476670794,
+        0.0007698445798864246,
+        0.04678073737643566,
+        0.048486695871407096,
+        0.0005224115720682312,
+        0.0045017012560399985
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "69089a42772a19411952d42789ea5c39c69d913963f00e17902faa78fc10f67d",
+      "validation_labels_sha256": "86e02f25ca325d1884616076151b8c2b2062aeed0ebb0dd8039b567d0fcd8aab",
+      "test_predictions_sha256": "12d85eb670d15cab04311acd5d3c167c0804daf8e5b0d00d5659659e3c30d961",
+      "test_labels_sha256": "3fe5cdb5c0662e1eb07f02e98fecf8d1f2d7030c75b66ab8dede5c3efc39dca3"
+    },
+    "optimization_seed": 20260822,
+    "algorithm_runtime_seconds": 0.9562839140417054
+  },
+  {
+    "dataset": "semeion",
+    "fold": 2,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 2,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.058823529411764705,
+        0.42188066115274014,
+        0.16666666666666666
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.047058823529411764,
+      0.4684519029683023,
+      0.08333333333333333
+    ],
+    "test_error": 0.07836990595611286,
+    "test_margin_loss": 0.15673981191222572,
+    "selected_count": 1,
+    "objective_context_id": "4aafbbb26bf1cdf66c752cd42e7a91dd98e9f9157c5804342ba407822a384633",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.003715377999469638,
+        0.015456238063052297,
+        0.057284921989776194,
+        0.051474355976097286,
+        0.05390506703406572,
+        0.05184643901884556,
+        0.00021215202286839485,
+        0.00019441195763647556,
+        0.0048894420033320785,
+        0.0057313250144943595,
+        0.00017867493443191051,
+        0.0018593940185382962
+      ],
+      "storage_bytes": [
+        3103560,
+        12406548,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9114,
+        41713
+      ],
+      "combined_costs": [
+        0.06213273786320329,
+        0.2496007478029093,
+        0.1541975394829533,
+        0.14167584469440186,
+        0.1473487348426205,
+        0.14317721231040723,
+        0.0008057923476670794,
+        0.0007698445798864246,
+        0.04678073737643566,
+        0.048486695871407096,
+        0.0005224115720682312,
+        0.0045017012560399985
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "69089a42772a19411952d42789ea5c39c69d913963f00e17902faa78fc10f67d",
+      "validation_labels_sha256": "86e02f25ca325d1884616076151b8c2b2062aeed0ebb0dd8039b567d0fcd8aab",
+      "test_predictions_sha256": "12d85eb670d15cab04311acd5d3c167c0804daf8e5b0d00d5659659e3c30d961",
+      "test_labels_sha256": "3fe5cdb5c0662e1eb07f02e98fecf8d1f2d7030c75b66ab8dede5c3efc39dca3"
+    },
+    "optimization_seed": 20260823,
+    "algorithm_runtime_seconds": 0.9631148969056085
+  },
+  {
+    "dataset": "semeion",
+    "fold": 2,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1019,
+      "validation": 255,
+      "test": 319
+    },
+    "n_objectives": 3,
+    "population_size": 1,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.047058823529411764,
+      0.4684519029683023,
+      0.08333333333333333
+    ],
+    "test_error": 0.07836990595611286,
+    "test_margin_loss": 0.15673981191222572,
+    "selected_count": 1,
+    "objective_context_id": "4aafbbb26bf1cdf66c752cd42e7a91dd98e9f9157c5804342ba407822a384633",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.003715377999469638,
+        0.015456238063052297,
+        0.057284921989776194,
+        0.051474355976097286,
+        0.05390506703406572,
+        0.05184643901884556,
+        0.00021215202286839485,
+        0.00019441195763647556,
+        0.0048894420033320785,
+        0.0057313250144943595,
+        0.00017867493443191051,
+        0.0018593940185382962
+      ],
+      "storage_bytes": [
+        3103560,
+        12406548,
+        2166513,
+        2124033,
+        2166513,
+        2166513,
+        21365,
+        21365,
+        2095769,
+        2095769,
+        9114,
+        41713
+      ],
+      "combined_costs": [
+        0.06213273786320329,
+        0.2496007478029093,
+        0.1541975394829533,
+        0.14167584469440186,
+        0.1473487348426205,
+        0.14317721231040723,
+        0.0008057923476670794,
+        0.0007698445798864246,
+        0.04678073737643566,
+        0.048486695871407096,
+        0.0005224115720682312,
+        0.0045017012560399985
+      ],
+      "cost_scale": 0.9999999999999999,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "69089a42772a19411952d42789ea5c39c69d913963f00e17902faa78fc10f67d",
+      "validation_labels_sha256": "86e02f25ca325d1884616076151b8c2b2062aeed0ebb0dd8039b567d0fcd8aab",
+      "test_predictions_sha256": "12d85eb670d15cab04311acd5d3c167c0804daf8e5b0d00d5659659e3c30d961",
+      "test_labels_sha256": "3fe5cdb5c0662e1eb07f02e98fecf8d1f2d7030c75b66ab8dede5c3efc39dca3"
+    },
+    "optimization_seed": 20260824,
+    "algorithm_runtime_seconds": 0.9592111889505759
+  },
+  {
+    "dataset": "semeion",
+    "fold": 3,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.4136299371364446,
+        0.16666666666666666
+      ],
+      [
+        0.0392156862745098,
+        0.3830853168594503,
+        0.4166666666666667
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.0392156862745098,
+      0.3830853168594503,
+      0.4166666666666667
+    ],
+    "test_error": 0.05345911949685535,
+    "test_margin_loss": 0.12955974842767295,
+    "selected_count": 5,
+    "objective_context_id": "7475b5b1e541a5d1dd316df79899a0d96ce9ac1806ab80630874e4b052fab656",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.004009430995211005,
+        0.01463512796908617,
+        0.051697348011657596,
+        0.051689018961042166,
+        0.052980492007918656,
+        0.05114570795558393,
+        0.00019041600171476603,
+        0.00019630196038633585,
+        0.004728378029540181,
+        0.00528838497120887,
+        0.00017900904640555382,
+        0.0020708489464595914
+      ],
+      "storage_bytes": [
+        3150513,
+        12664911,
+        2168637,
+        2134653,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06319363033894898,
+        0.250931241102712,
+        0.14595988192521825,
+        0.14535133618882287,
+        0.14864641410259502,
+        0.1448049072962676,
+        0.0007702921577638516,
+        0.0007826156517847557,
+        0.046388770048851356,
+        0.047561262514803096,
+        0.0005483473620045771,
+        0.005061301310227734
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "17012dd6c65bf6445d99db040532eb31d2e3d801263dc53d97dc94268791b953",
+      "validation_labels_sha256": "b16fc17f4191bedafa67c3323a0227f59f48e879b6e9af74f305db5f5a570e34",
+      "test_predictions_sha256": "ac8db12bdbc56d012cb7f8efb7f58f41504170ccdf4733556592abc40fdc3295",
+      "test_labels_sha256": "57dbabf9ba757c331b00fcb7c2aa9f8b2be6b0b61c5f2b346f4c1e09a661363c"
+    },
+    "optimization_seed": 20260820,
+    "algorithm_runtime_seconds": 1.0352176940068603
+  },
+  {
+    "dataset": "semeion",
+    "fold": 3,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 4,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ],
+      [
+        0.0392156862745098,
+        0.3830853168594503,
+        0.4166666666666667
+      ],
+      [
+        0.047058823529411764,
+        0.4136299371364446,
+        0.16666666666666666
+      ],
+      [
+        0.03529411764705882,
+        0.3835786046324255,
+        0.3333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.03529411764705882,
+      0.3835786046324255,
+      0.3333333333333333
+    ],
+    "test_error": 0.050314465408805034,
+    "test_margin_loss": 0.13050314465408805,
+    "selected_count": 4,
+    "objective_context_id": "7475b5b1e541a5d1dd316df79899a0d96ce9ac1806ab80630874e4b052fab656",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.004009430995211005,
+        0.01463512796908617,
+        0.051697348011657596,
+        0.051689018961042166,
+        0.052980492007918656,
+        0.05114570795558393,
+        0.00019041600171476603,
+        0.00019630196038633585,
+        0.004728378029540181,
+        0.00528838497120887,
+        0.00017900904640555382,
+        0.0020708489464595914
+      ],
+      "storage_bytes": [
+        3150513,
+        12664911,
+        2168637,
+        2134653,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06319363033894898,
+        0.250931241102712,
+        0.14595988192521825,
+        0.14535133618882287,
+        0.14864641410259502,
+        0.1448049072962676,
+        0.0007702921577638516,
+        0.0007826156517847557,
+        0.046388770048851356,
+        0.047561262514803096,
+        0.0005483473620045771,
+        0.005061301310227734
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "17012dd6c65bf6445d99db040532eb31d2e3d801263dc53d97dc94268791b953",
+      "validation_labels_sha256": "b16fc17f4191bedafa67c3323a0227f59f48e879b6e9af74f305db5f5a570e34",
+      "test_predictions_sha256": "ac8db12bdbc56d012cb7f8efb7f58f41504170ccdf4733556592abc40fdc3295",
+      "test_labels_sha256": "57dbabf9ba757c331b00fcb7c2aa9f8b2be6b0b61c5f2b346f4c1e09a661363c"
+    },
+    "optimization_seed": 20260821,
+    "algorithm_runtime_seconds": 0.981443022028543
+  },
+  {
+    "dataset": "semeion",
+    "fold": 3,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 4,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.0392156862745098,
+        0.3830853168594503,
+        0.4166666666666667
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ],
+      [
+        0.047058823529411764,
+        0.4136299371364446,
+        0.16666666666666666
+      ],
+      [
+        0.03529411764705882,
+        0.39617503365150464,
+        0.25
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.03529411764705882,
+      0.39617503365150464,
+      0.25
+    ],
+    "test_error": 0.059748427672955975,
+    "test_margin_loss": 0.1278825995807128,
+    "selected_count": 3,
+    "objective_context_id": "7475b5b1e541a5d1dd316df79899a0d96ce9ac1806ab80630874e4b052fab656",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.004009430995211005,
+        0.01463512796908617,
+        0.051697348011657596,
+        0.051689018961042166,
+        0.052980492007918656,
+        0.05114570795558393,
+        0.00019041600171476603,
+        0.00019630196038633585,
+        0.004728378029540181,
+        0.00528838497120887,
+        0.00017900904640555382,
+        0.0020708489464595914
+      ],
+      "storage_bytes": [
+        3150513,
+        12664911,
+        2168637,
+        2134653,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06319363033894898,
+        0.250931241102712,
+        0.14595988192521825,
+        0.14535133618882287,
+        0.14864641410259502,
+        0.1448049072962676,
+        0.0007702921577638516,
+        0.0007826156517847557,
+        0.046388770048851356,
+        0.047561262514803096,
+        0.0005483473620045771,
+        0.005061301310227734
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "17012dd6c65bf6445d99db040532eb31d2e3d801263dc53d97dc94268791b953",
+      "validation_labels_sha256": "b16fc17f4191bedafa67c3323a0227f59f48e879b6e9af74f305db5f5a570e34",
+      "test_predictions_sha256": "ac8db12bdbc56d012cb7f8efb7f58f41504170ccdf4733556592abc40fdc3295",
+      "test_labels_sha256": "57dbabf9ba757c331b00fcb7c2aa9f8b2be6b0b61c5f2b346f4c1e09a661363c"
+    },
+    "optimization_seed": 20260822,
+    "algorithm_runtime_seconds": 0.9696092299418524
+  },
+  {
+    "dataset": "semeion",
+    "fold": 3,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.4136299371364446,
+        0.16666666666666666
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ],
+      [
+        0.03529411764705882,
+        0.39617503365150464,
+        0.25
+      ]
+    ],
+    "raw_masks": [
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.03529411764705882,
+      0.39617503365150464,
+      0.25
+    ],
+    "test_error": 0.059748427672955975,
+    "test_margin_loss": 0.1278825995807128,
+    "selected_count": 3,
+    "objective_context_id": "7475b5b1e541a5d1dd316df79899a0d96ce9ac1806ab80630874e4b052fab656",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.004009430995211005,
+        0.01463512796908617,
+        0.051697348011657596,
+        0.051689018961042166,
+        0.052980492007918656,
+        0.05114570795558393,
+        0.00019041600171476603,
+        0.00019630196038633585,
+        0.004728378029540181,
+        0.00528838497120887,
+        0.00017900904640555382,
+        0.0020708489464595914
+      ],
+      "storage_bytes": [
+        3150513,
+        12664911,
+        2168637,
+        2134653,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06319363033894898,
+        0.250931241102712,
+        0.14595988192521825,
+        0.14535133618882287,
+        0.14864641410259502,
+        0.1448049072962676,
+        0.0007702921577638516,
+        0.0007826156517847557,
+        0.046388770048851356,
+        0.047561262514803096,
+        0.0005483473620045771,
+        0.005061301310227734
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "17012dd6c65bf6445d99db040532eb31d2e3d801263dc53d97dc94268791b953",
+      "validation_labels_sha256": "b16fc17f4191bedafa67c3323a0227f59f48e879b6e9af74f305db5f5a570e34",
+      "test_predictions_sha256": "ac8db12bdbc56d012cb7f8efb7f58f41504170ccdf4733556592abc40fdc3295",
+      "test_labels_sha256": "57dbabf9ba757c331b00fcb7c2aa9f8b2be6b0b61c5f2b346f4c1e09a661363c"
+    },
+    "optimization_seed": 20260823,
+    "algorithm_runtime_seconds": 0.9721702649258077
+  },
+  {
+    "dataset": "semeion",
+    "fold": 3,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ],
+      [
+        0.047058823529411764,
+        0.4136299371364446,
+        0.16666666666666666
+      ],
+      [
+        0.03529411764705882,
+        0.39617503365150464,
+        0.25
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.03529411764705882,
+      0.39617503365150464,
+      0.25
+    ],
+    "test_error": 0.059748427672955975,
+    "test_margin_loss": 0.1278825995807128,
+    "selected_count": 3,
+    "objective_context_id": "7475b5b1e541a5d1dd316df79899a0d96ce9ac1806ab80630874e4b052fab656",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.004009430995211005,
+        0.01463512796908617,
+        0.051697348011657596,
+        0.051689018961042166,
+        0.052980492007918656,
+        0.05114570795558393,
+        0.00019041600171476603,
+        0.00019630196038633585,
+        0.004728378029540181,
+        0.00528838497120887,
+        0.00017900904640555382,
+        0.0020708489464595914
+      ],
+      "storage_bytes": [
+        3150513,
+        12664911,
+        2168637,
+        2134653,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06319363033894898,
+        0.250931241102712,
+        0.14595988192521825,
+        0.14535133618882287,
+        0.14864641410259502,
+        0.1448049072962676,
+        0.0007702921577638516,
+        0.0007826156517847557,
+        0.046388770048851356,
+        0.047561262514803096,
+        0.0005483473620045771,
+        0.005061301310227734
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "17012dd6c65bf6445d99db040532eb31d2e3d801263dc53d97dc94268791b953",
+      "validation_labels_sha256": "b16fc17f4191bedafa67c3323a0227f59f48e879b6e9af74f305db5f5a570e34",
+      "test_predictions_sha256": "ac8db12bdbc56d012cb7f8efb7f58f41504170ccdf4733556592abc40fdc3295",
+      "test_labels_sha256": "57dbabf9ba757c331b00fcb7c2aa9f8b2be6b0b61c5f2b346f4c1e09a661363c"
+    },
+    "optimization_seed": 20260824,
+    "algorithm_runtime_seconds": 0.9470323629211634
+  },
+  {
+    "dataset": "semeion",
+    "fold": 4,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 2,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.058823529411764705,
+        0.4333966175330384,
+        0.16666666666666666
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.047058823529411764,
+      0.4684519029683023,
+      0.08333333333333333
+    ],
+    "test_error": 0.08176100628930817,
+    "test_margin_loss": 0.16352201257861634,
+    "selected_count": 1,
+    "objective_context_id": "2e0a9e22468d7e1578419e2733fe02246523c9963b8d20411909702c6b4d03d9",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.0036126510240137577,
+        0.013486235053278506,
+        0.04860832099802792,
+        0.04845460690557957,
+        0.05007688398472965,
+        0.04883021500427276,
+        0.0001949109137058258,
+        0.00023504195269197226,
+        0.004598830942995846,
+        0.004856028943322599,
+        0.00017937005031853914,
+        0.0016674919752404094
+      ],
+      "storage_bytes": [
+        3117960,
+        12567846,
+        2168637,
+        2121909,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06253797970035627,
+        0.24968518510932675,
+        0.14602264431525727,
+        0.1448639369437124,
+        0.14928901252499438,
+        0.14651617951564877,
+        0.0008069852917791795,
+        0.0008962444867575784,
+        0.04689921176273294,
+        0.047471269876332864,
+        0.0005733717083413383,
+        0.004437978764760244
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "d2d4112b1a0c6e028f8dcae5b68b47afbdec1662d1a248447c84442037795db4",
+      "validation_labels_sha256": "d93756035353f4dc371e8e586edc45e835326570790558c44896f7070c51649b",
+      "test_predictions_sha256": "2fd94255d0fec03fa6c45f1b5e77560d82773095ff97e7d5009b15ced42886f2",
+      "test_labels_sha256": "84cbeac1ba4121fe157b4abdf8d0ce08344cbb96c9a89172fae737e345a1ddf4"
+    },
+    "optimization_seed": 20260820,
+    "algorithm_runtime_seconds": 1.0245483299950138
+  },
+  {
+    "dataset": "semeion",
+    "fold": 4,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.0392156862745098,
+        0.4115324471334769,
+        0.25
+      ],
+      [
+        0.03529411764705882,
+        0.41131571720903326,
+        0.4166666666666667
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.03529411764705882,
+      0.41131571720903326,
+      0.4166666666666667
+    ],
+    "test_error": 0.07232704402515723,
+    "test_margin_loss": 0.15283018867924528,
+    "selected_count": 5,
+    "objective_context_id": "2e0a9e22468d7e1578419e2733fe02246523c9963b8d20411909702c6b4d03d9",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.0036126510240137577,
+        0.013486235053278506,
+        0.04860832099802792,
+        0.04845460690557957,
+        0.05007688398472965,
+        0.04883021500427276,
+        0.0001949109137058258,
+        0.00023504195269197226,
+        0.004598830942995846,
+        0.004856028943322599,
+        0.00017937005031853914,
+        0.0016674919752404094
+      ],
+      "storage_bytes": [
+        3117960,
+        12567846,
+        2168637,
+        2121909,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06253797970035627,
+        0.24968518510932675,
+        0.14602264431525727,
+        0.1448639369437124,
+        0.14928901252499438,
+        0.14651617951564877,
+        0.0008069852917791795,
+        0.0008962444867575784,
+        0.04689921176273294,
+        0.047471269876332864,
+        0.0005733717083413383,
+        0.004437978764760244
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "d2d4112b1a0c6e028f8dcae5b68b47afbdec1662d1a248447c84442037795db4",
+      "validation_labels_sha256": "d93756035353f4dc371e8e586edc45e835326570790558c44896f7070c51649b",
+      "test_predictions_sha256": "2fd94255d0fec03fa6c45f1b5e77560d82773095ff97e7d5009b15ced42886f2",
+      "test_labels_sha256": "84cbeac1ba4121fe157b4abdf8d0ce08344cbb96c9a89172fae737e345a1ddf4"
+    },
+    "optimization_seed": 20260821,
+    "algorithm_runtime_seconds": 0.9677115229424089
+  },
+  {
+    "dataset": "semeion",
+    "fold": 4,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ],
+      [
+        0.06274509803921569,
+        0.42524962129342503,
+        0.16666666666666666
+      ],
+      [
+        0.058823529411764705,
+        0.4333966175330384,
+        0.16666666666666666
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.047058823529411764,
+      0.4684519029683023,
+      0.08333333333333333
+    ],
+    "test_error": 0.08176100628930817,
+    "test_margin_loss": 0.16352201257861634,
+    "selected_count": 1,
+    "objective_context_id": "2e0a9e22468d7e1578419e2733fe02246523c9963b8d20411909702c6b4d03d9",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.0036126510240137577,
+        0.013486235053278506,
+        0.04860832099802792,
+        0.04845460690557957,
+        0.05007688398472965,
+        0.04883021500427276,
+        0.0001949109137058258,
+        0.00023504195269197226,
+        0.004598830942995846,
+        0.004856028943322599,
+        0.00017937005031853914,
+        0.0016674919752404094
+      ],
+      "storage_bytes": [
+        3117960,
+        12567846,
+        2168637,
+        2121909,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06253797970035627,
+        0.24968518510932675,
+        0.14602264431525727,
+        0.1448639369437124,
+        0.14928901252499438,
+        0.14651617951564877,
+        0.0008069852917791795,
+        0.0008962444867575784,
+        0.04689921176273294,
+        0.047471269876332864,
+        0.0005733717083413383,
+        0.004437978764760244
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "d2d4112b1a0c6e028f8dcae5b68b47afbdec1662d1a248447c84442037795db4",
+      "validation_labels_sha256": "d93756035353f4dc371e8e586edc45e835326570790558c44896f7070c51649b",
+      "test_predictions_sha256": "2fd94255d0fec03fa6c45f1b5e77560d82773095ff97e7d5009b15ced42886f2",
+      "test_labels_sha256": "84cbeac1ba4121fe157b4abdf8d0ce08344cbb96c9a89172fae737e345a1ddf4"
+    },
+    "optimization_seed": 20260822,
+    "algorithm_runtime_seconds": 0.9778910520253703
+  },
+  {
+    "dataset": "semeion",
+    "fold": 4,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.06274509803921569,
+        0.42524962129342503,
+        0.16666666666666666
+      ],
+      [
+        0.0392156862745098,
+        0.4115324471334769,
+        0.25
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.0392156862745098,
+      0.4115324471334769,
+      0.25
+    ],
+    "test_error": 0.06289308176100629,
+    "test_margin_loss": 0.14360587002096437,
+    "selected_count": 3,
+    "objective_context_id": "2e0a9e22468d7e1578419e2733fe02246523c9963b8d20411909702c6b4d03d9",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.0036126510240137577,
+        0.013486235053278506,
+        0.04860832099802792,
+        0.04845460690557957,
+        0.05007688398472965,
+        0.04883021500427276,
+        0.0001949109137058258,
+        0.00023504195269197226,
+        0.004598830942995846,
+        0.004856028943322599,
+        0.00017937005031853914,
+        0.0016674919752404094
+      ],
+      "storage_bytes": [
+        3117960,
+        12567846,
+        2168637,
+        2121909,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06253797970035627,
+        0.24968518510932675,
+        0.14602264431525727,
+        0.1448639369437124,
+        0.14928901252499438,
+        0.14651617951564877,
+        0.0008069852917791795,
+        0.0008962444867575784,
+        0.04689921176273294,
+        0.047471269876332864,
+        0.0005733717083413383,
+        0.004437978764760244
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "d2d4112b1a0c6e028f8dcae5b68b47afbdec1662d1a248447c84442037795db4",
+      "validation_labels_sha256": "d93756035353f4dc371e8e586edc45e835326570790558c44896f7070c51649b",
+      "test_predictions_sha256": "2fd94255d0fec03fa6c45f1b5e77560d82773095ff97e7d5009b15ced42886f2",
+      "test_labels_sha256": "84cbeac1ba4121fe157b4abdf8d0ce08344cbb96c9a89172fae737e345a1ddf4"
+    },
+    "optimization_seed": 20260823,
+    "algorithm_runtime_seconds": 0.9609254220267758
+  },
+  {
+    "dataset": "semeion",
+    "fold": 4,
+    "seed": 20260820,
+    "algorithm": "mdep_paper",
+    "algorithm_parameters": {
+      "pop_size": 40,
+      "n_gen": 50,
+      "variation": "uniform_crossover",
+      "implementation_type": "paper_reimplementation",
+      "source_paper": "Wu et al. (2022), Multi-objective Evolutionary Ensemble Pruning Guided by Margin Distribution",
+      "objective_definition": "validation_error_margin_ratio_selected_count",
+      "moea": "NSGA-III",
+      "crossover": "uniform",
+      "crossover_probability": 0.7,
+      "mutation_probability_per_bit": 0.08333333333333333,
+      "initialization_policy": "retain_non_dominated_singletons",
+      "offspring_repair_policy": "repair_size_zero_or_one",
+      "implementation_revision": "mdep_singleton_initialization_fix_v1"
+    },
+    "split_sizes": {
+      "train": 1020,
+      "validation": 255,
+      "test": 318
+    },
+    "n_objectives": 3,
+    "population_size": 3,
+    "evaluation_count": 2000,
+    "raw_front": [
+      [
+        0.058823529411764705,
+        0.4333966175330384,
+        0.16666666666666666
+      ],
+      [
+        0.047058823529411764,
+        0.4684519029683023,
+        0.08333333333333333
+      ],
+      [
+        0.0392156862745098,
+        0.4115324471334769,
+        0.25
+      ]
+    ],
+    "raw_masks": [
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "best_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_validation_objectives": [
+      0.0392156862745098,
+      0.4115324471334769,
+      0.25
+    ],
+    "test_error": 0.06289308176100629,
+    "test_margin_loss": 0.14360587002096437,
+    "selected_count": 3,
+    "objective_context_id": "2e0a9e22468d7e1578419e2733fe02246523c9963b8d20411909702c6b4d03d9",
+    "objective_context": {
+      "classifier_names": [
+        "rf_n50",
+        "rf_n200",
+        "svm_rbf_c0.1_g0.1",
+        "svm_rbf_c1_g0.01",
+        "svm_rbf_c1_g1",
+        "svm_rbf_c10_g0.1",
+        "logreg_c0.1",
+        "logreg_c10",
+        "knn_k5",
+        "knn_k11",
+        "tree_depth5",
+        "gaussian_nb"
+      ],
+      "inference_seconds": [
+        0.0036126510240137577,
+        0.013486235053278506,
+        0.04860832099802792,
+        0.04845460690557957,
+        0.05007688398472965,
+        0.04883021500427276,
+        0.0001949109137058258,
+        0.00023504195269197226,
+        0.004598830942995846,
+        0.004856028943322599,
+        0.00017937005031853914,
+        0.0016674919752404094
+      ],
+      "storage_bytes": [
+        3117960,
+        12567846,
+        2168637,
+        2121909,
+        2168637,
+        2168637,
+        21365,
+        21365,
+        2097825,
+        2097825,
+        9978,
+        41713
+      ],
+      "combined_costs": [
+        0.06253797970035627,
+        0.24968518510932675,
+        0.14602264431525727,
+        0.1448639369437124,
+        0.14928901252499438,
+        0.14651617951564877,
+        0.0008069852917791795,
+        0.0008962444867575784,
+        0.04689921176273294,
+        0.047471269876332864,
+        0.0005733717083413383,
+        0.004437978764760244
+      ],
+      "cost_scale": 1.0,
+      "inference_weight": 0.5,
+      "storage_weight": 0.5,
+      "validation_predictions_sha256": "d2d4112b1a0c6e028f8dcae5b68b47afbdec1662d1a248447c84442037795db4",
+      "validation_labels_sha256": "d93756035353f4dc371e8e586edc45e835326570790558c44896f7070c51649b",
+      "test_predictions_sha256": "2fd94255d0fec03fa6c45f1b5e77560d82773095ff97e7d5009b15ced42886f2",
+      "test_labels_sha256": "84cbeac1ba4121fe157b4abdf8d0ce08344cbb96c9a89172fae737e345a1ddf4"
+    },
+    "optimization_seed": 20260824,
+    "algorithm_runtime_seconds": 0.9465355119900778
+  }
+]

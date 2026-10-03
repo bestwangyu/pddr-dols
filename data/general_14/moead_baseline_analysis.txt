@@ -1,0 +1,37 @@
+PDDR-DOLS general-baseline confirmation
+
+integrity: {'datasets': 14, 'instances': 350, 'metric_records': 1400, 'raw_algorithm_records': 1400, 'exact_records': 70, 'records_per_dataset_algorithm': 25, 'expected_total_raw_records': 1470}
+MOEA/D evidence: {'status': 'SUPPORTED', 'required_nonloss_datasets': 11, 'igd_plus_nonloss_datasets': 14, 'hypervolume_nonloss_datasets': 14, 'at_least_one_significant_positive_front_metric': True, 'interpretation': 'PDDR-DOLS has paper-level support against the decomposition baseline.'}
+
+Main front metrics (dataset means are independent paired units):
+  igd_plus: Friedman={'n_instances': 14, 'n_algorithms': 3, 'statistic': 21.41818181818181, 'pvalue': 2.2340912724534556e-05}; ranks={'pddr_local_search_delete_only': 1.0357142857142858, 'nsga2': 2.25, 'moead': 2.7142857142857144}
+    PDDR-DOLS vs NSGA-II: W/T/L=13/1/0, p=0.00147378, Holm=0.00147378, reject=True, r_rb=+1.0000, improvement=+0.0433643, CI95=[-0.05997826387571515, -0.029185107247426813]
+    PDDR-DOLS vs MOEA/D: W/T/L=14/0/0, p=0.00012207, Holm=0.000244141, reject=True, r_rb=+1.0000, improvement=+0.144776, CI95=[-0.21464271971277843, -0.08424880752739966]
+  hypervolume: Friedman={'n_instances': 14, 'n_algorithms': 3, 'statistic': 21.41818181818181, 'pvalue': 2.2340912724534556e-05}; ranks={'pddr_local_search_delete_only': 1.0357142857142858, 'nsga2': 2.25, 'moead': 2.7142857142857144}
+    PDDR-DOLS vs NSGA-II: W/T/L=13/1/0, p=0.00147378, Holm=0.00147378, reject=True, r_rb=+1.0000, improvement=+0.0918221, CI95=[0.06317645649123138, 0.12072322528036625]
+    PDDR-DOLS vs MOEA/D: W/T/L=14/0/0, p=0.00012207, Holm=0.000244141, reject=True, r_rb=+1.0000, improvement=+0.17704, CI95=[0.10181894538192614, 0.2625061144131739]
+  test_error: Friedman={'n_instances': 14, 'n_algorithms': 3, 'statistic': 8.41509433962262, 'pvalue': 0.014882828655742905}; ranks={'pddr_local_search_delete_only': 1.3928571428571428, 'nsga2': 2.2142857142857144, 'moead': 2.392857142857143}
+    PDDR-DOLS vs NSGA-II: W/T/L=11/2/1, p=0.00963298, Holm=0.019266, reject=True, r_rb=+0.8462, improvement=+0.000707525, CI95=[-0.0016095774715384696, -0.00014336579285785563]
+    PDDR-DOLS vs MOEA/D: W/T/L=10/1/3, p=0.0231298, Holm=0.0231298, reject=True, r_rb=+0.7143, improvement=+0.00388166, CI95=[-0.006798102860100458, -0.001224945650681067]
+
+Representative-resource metrics:
+  selected_count:
+    PDDR-DOLS vs NSGA-II: W/T/L=12/1/1, Holm=0.00638731, r_rb=+0.8571, relative reduction=+14.664%
+    PDDR-DOLS vs MOEA/D: W/T/L=1/2/11, Holm=0.00574683, r_rb=-0.9744, relative reduction=-80.659%
+  inference_seconds:
+    PDDR-DOLS vs NSGA-II: W/T/L=11/1/2, Holm=0.0392433, r_rb=+0.6484, relative reduction=+10.897%
+    PDDR-DOLS vs MOEA/D: W/T/L=4/0/10, Holm=0.010498, r_rb=-0.8095, relative reduction=-549.157%
+  storage_bytes:
+    PDDR-DOLS vs NSGA-II: W/T/L=9/1/4, Holm=0.151956, r_rb=+0.4505, relative reduction=+13.385%
+    PDDR-DOLS vs MOEA/D: W/T/L=4/0/10, Holm=0.010498, r_rb=-0.8095, relative reduction=-1338.144%
+  combined_cost:
+    PDDR-DOLS vs NSGA-II: W/T/L=10/1/3, Holm=0.0392433, r_rb=+0.6484, relative reduction=+11.490%
+    PDDR-DOLS vs MOEA/D: W/T/L=4/0/10, Holm=0.010498, r_rb=-0.8095, relative reduction=-562.306%
+  algorithm_runtime_seconds:
+    PDDR-DOLS vs NSGA-II: W/T/L=0/0/14, Holm=0.000244141, r_rb=-1.0000, relative reduction=-278.070%
+    PDDR-DOLS vs MOEA/D: W/T/L=12/0/2, Holm=0.000610352, r_rb=+0.9429, relative reduction=+15.723%
+
+Mechanism ablation (separate hypothesis family):
+  igd_plus: PDDR-DOLS vs Always delete-only W/T/L=5/4/5, p=0.444587, r_rb=+0.2727
+  hypervolume: PDDR-DOLS vs Always delete-only W/T/L=7/4/3, p=0.33288, r_rb=+0.3455
+  test_error: PDDR-DOLS vs Always delete-only W/T/L=4/4/6, p=0.575062, r_rb=-0.2000

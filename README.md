@@ -3,9 +3,9 @@
 Reproduction code for PDDR-triggered Delete-Only Local Search (PDDR-DOLS)
 in heterogeneous ensemble pruning. The historical JSON identifier for the
 method is `pddr_local_search_delete_only`; this is the same algorithm, not an
-additional method. The repository contains source and tests only; generated
-datasets, experiment outputs, figures, manuscripts, and local caches are not
-distributed.
+additional method. The repository includes source, tests, and the archived
+paper results in `data/` (see `data/README.md`). Downloaded input datasets,
+figures, manuscripts, and local caches are not distributed.
 
 ## Setup
 
@@ -77,6 +77,7 @@ only a pipeline check; it cannot reproduce the paper's reported statistics.
 
 ## Repository map
 
+- `data/`: archived paper results, protocols, checksums, and table/figure map.
 - `code/run_batch.py`, `code/batch_runner.py`: shared experiment protocol.
 - `code/pddr_local_search.py`, `code/pddrff.py`: PDDR-DOLS and trigger logic.
 - `code/fair_baselines.py`, `code/pep_paper.py`, `code/mdep_paper.py`: comparison methods.
